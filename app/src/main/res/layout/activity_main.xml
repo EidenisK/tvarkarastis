@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="?backgroundColor">
+
+    <ImageView
+        android:id="@+id/topBackground"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:background="?defaultItemColor"
+        app:layout_constraintEnd_toStartOf="@+id/settingsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="parseLessons"
+        android:text="@string/load_timetable"
+        android:textColor="?blackText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settingsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:background="?selectedItemColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="openSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/midbackground"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="47dp"
+        android:background="?grayBackgroundColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/classView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/to_load_lessons"
+        android:textAlignment="center"
+        android:textColor="?blackText"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/midbackground" />
+
+    <TextView
+        android:id="@+id/infoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/press_load"
+        android:textColor="?grayText"
+        android:textSize="12sp"
+        android:typeface="normal"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classView" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dienuList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midbackground"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dienuList"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="?defaultItemColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midbackground"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

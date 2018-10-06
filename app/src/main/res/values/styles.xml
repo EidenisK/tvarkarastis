@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:timePickerMode">spinner</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/selectedItemColor</item>
+
+        <item name="android:textColorPrimary">@color/blackText</item>
+        <item name="android:textColorSecondary">@color/grayText</item>
+        <item name="android:numbersBackgroundColor">@color/grayBackgroundColor</item>
+
+        <item name="defaultItemColor">@color/defaultItemColor</item>
+        <item name="selectedItemColor">@color/selectedItemColor</item>
+        <item name="grayBackgroundColor">@color/grayBackgroundColor</item>
+
+        <item name="blackText">@color/blackText</item>
+        <item name="grayText">@color/grayText</item>
+        <item name="redText">@color/redText</item>
+        <item name="greenText">@color/greenText</item>
+
+        <item name="backgroundColor">@color/backgroundColor</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/selectedItemColor1</item>
+
+        <item name="defaultItemColor">@color/defaultItemColor1</item>
+        <item name="selectedItemColor">@color/selectedItemColor1</item>
+        <item name="grayBackgroundColor">@color/grayBackgroundColor1</item>
+
+        <item name="blackText">@color/blackText1</item>
+        <item name="grayText">@color/grayText1</item>
+        <item name="redText">@color/redText1</item>
+        <item name="greenText">@color/greenText1</item>
+
+        <item name="backgroundColor">@color/backgroundColor1</item>
+    </style>
+
+    <style name="DarkTimePicker" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:textColorSecondary">@color/blackText1</item>
+        <item name="android:background">@color/backgroundColor1</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

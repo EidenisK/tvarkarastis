@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="bg">#cfcdcd</color>
+
+    <color name="defaultItemColor">#c1c1c1</color>
+    <color name="selectedItemColor">#999999</color>
+    <color name="grayBackgroundColor">#d8d8d8</color>
+
+    <color name="blackText">#000000</color>
+    <color name="grayText">#6b6b6b</color>
+    <color name="redText">#ffcc0000</color>
+    <color name="greenText">#3FBF3F</color>
+
+    <color name="backgroundColor">#eeeeee</color>
+    <!--<color name="grayText">#ff0000</color>-->
+
+    <color name="defaultItemColor1">#454545</color>
+    <color name="selectedItemColor1">#606060</color>
+    <color name="grayBackgroundColor1">#686868</color>
+
+    <color name="blackText1">#FFFFFF</color>
+    <color name="grayText1">#c2c2c2</color>
+    <color name="redText1">#ff0000</color>
+    <color name="greenText1">#3FBF3F</color>
+
+    <color name="backgroundColor1">#333333</color>
+</resources>

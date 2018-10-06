@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="defaultItemColor" format="reference|color" />
+    <attr name="selectedItemColor" format="reference|color" />
+    <attr name="grayBackgroundColor" format="reference|color" />
+
+    <attr name="blackText" format="reference|color" />
+    <attr name="grayText" format="reference|color" />
+    <attr name="redText" format="reference|color" />
+    <attr name="greenText" format="reference|color" />
+    <attr name="backgroundColor" format="reference|color" />
+
+</resources>

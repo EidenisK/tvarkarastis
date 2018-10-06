@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="?backgroundColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+
+        android:textColor="?blackText"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/dialog_button"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="20dp"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:textAlignment="textEnd"
+        android:textColor="?colorAccent"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+</LinearLayout>

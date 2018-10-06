@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical">
+
+    <TextView
+        android:id="@+id/pavadinimas"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numeris"
+        android:layout_toEndOf="@+id/numeris"
+        android:fontFamily="@font/open_sans"
+        android:textColor="?blackText"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/laikas"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pavadinimas"
+        android:layout_below="@+id/mokytojas"
+        android:textColor="?grayText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mokytojas"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pavadinimas"
+        android:layout_below="@+id/pavadinimas"
+        android:textColor="?blackText"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/numeris"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:paddingEnd="8dp"
+        android:textAlignment="viewStart"
+        android:textColor="?blackText"
+        android:textSize="50sp" />
+
+</RelativeLayout>

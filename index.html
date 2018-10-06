@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GVG Tvarkaraščio programa</title>
+	<link REL="SHORTCUT ICON" href="./site/ic_launcher.ico">
+	<link REL="STYLESHEET" href="./site/css.css">
+</head>
+<body>
+<div class="pavadinimas">
+	<h3>Gargždų „Vaivorykštės“ gimnazijos</h3>
+	<h1>TVARKARAŠTIS</h1>
+</div>
+<div class="slideshow">
+	<div id="slides" onclick="plusDivs(1)">
+		<img class="slide" src="./site/1.png" />
+		<img class="slide" src="./site/2.png" />
+		<img class="slide" src="./site/3.png" />
+		<img class="slide" src="./site/4.png" />
+		<img class="slide" src="./site/5.png" />
+		<img class="slide" src="./site/6.png" />
+	</div>
+	<table class="preview">
+		<tr>
+			<td><img class="demo" src="./site/1.png" style="width:100%" onclick="currentDiv(1)" /></td>
+			<td><img class="demo" src="./site/2.png" style="width:100%" onclick="currentDiv(2)" /></td>
+			<td><img class="demo" src="./site/3.png" style="width:100%" onclick="currentDiv(3)" /></td>
+			<td><img class="demo" src="./site/4.png" style="width:100%" onclick="currentDiv(4)" /></td>
+			<td><img class="demo" src="./site/5.png" style="width:100%" onclick="currentDiv(5)" /></td>
+			<td><img class="demo" src="./site/6.png" style="width:100%" onclick="currentDiv(6)" /></td>
+		</tr>
+	</table>
+</div>
+<div class="apie">
+	<h2>APIE</h2>
+	Programa sukurta pagal <i>"Tvarkaraštis"</i> Play Store programos pricipą, bet
+	pritaikyta būtent šiai mokyklai.<br>
+	<br>
+	<b>Kuo naudinga:</b><br>
+	* Nebereikia nešiotis suplyšusio tvarkaraščio lapo ar ranka perrašinėti pamokų
+	- pamokos atnaujinamos automatiškai<br>
+	* Galimybė <u>vieno mygtuko paspaudimu</u> peržiūrėti tvarkaraštį - nereikia
+	valandą ieškoti savo vardo netvarkingame tinklalapyje<br>
+	* <u>Widget („valdiklis“)</u>: vienos dienos pamokos pradiniame telefono
+	ekrane - dar lengviau pasiekiama<br>
+	* <u>Patikimumas</u> - neturint interneto ryšio arba neveikiant mokyklos
+	tinklalapiui galima pasižiūrėti išsaugotą tvarkaraštį<br>
+	* <u>Pranešimai</u> (notifications) apie dabartinę ir kitą pamokas<br>
+	* Tamsi ir šviesi programėlės spalvų temos (kartu keičiasi ir widget'o tema)<br>
+	<br>
+	<b>Nepasitikite, nenorite įrašinėti keistų programų į savo telefoną?</b><br>
+	Ir nereikia. Dėl „aštuntojo pasaulio stebuklo” - <i>„open source software”</i>
+	 - galite patys pasižiūrėti, ką programa veiks jūsų
+	telefone - prie kiekvieno parsisiuntimo yra programos kodo parsisiuntimas.<br>
+	<br>
+	<i>Programa kurta asmeninėms reikmėms, todėl funkcijos ir nustatymai gali
+		atrodyti labai 'specifiniai'</i>
+</div>
+<div class="parsisiuntimai">
+	<h2>PARSISIUNTIMAI</h2>
+	<div class="versija darkBackground">
+		<h3>v1.4</h3>
+		<i><div class="DC" id="DC-3">Parsisiuntimų: NaN</div></i>
+		<div class="aprasymas">
+			<b>SVARBUS ATNAUJINIMAS: sensenės programos versijos nebesiunčia tvarkaraščio!</b><br>
+			Įdėtas automatinis tvarkaraščio nuorodos gavimas<br>
+			Pakeista "išsaugotų mokinių" sistema<br>
+			Pridėti mokytojai ir kabinetai<br>
+			Nebereikia perjungti tarp I-II ir III-IV klasių<br>
+			Pataisyta klaida, kai programa crash'ina kraunant tvarkaraštį iš atminties<br>
+			Pamokos pavadinimo 'apkarpymas' pašalins ir lygį (A, B) bei srautą (7 srautas)
+		</div>
+		<a href="https://github.com/DrFlarre/tvarkarastis/releases/download/v1.4/gvg-tvarkarastis-v1.4.apk"><b>Siųstis (.apk)</b></a>,
+		<a href="https://github.com/DrFlarre/tvarkarastis/archive/v1.4.zip">programos kodas (.zip)</a>
+	</div>
+	<h4 onclick="toggleOlder()" id="toggleOlder" class="darkBackground">SENESNI</h4>
+		<div id="senesni">
+			<div class="versija darkBackground">
+				<h3>v1.3</h3>
+				<i><div class="DC" id="DC-1">Parsisiuntimų: NaN</div></i>
+				<div class="aprasymas">
+						Atskirti tamsaus ir šviesaus stiliaus widget'ai<br>
+						Permatomas widget'o fonas<br>
+						Klaidų taisymai...<br>
+				</div>
+				<a href="https://github.com/DrFlarre/tvarkarastis/releases/download/v1.3/gvg-tvarkarastis-v1.3.apk"><b>Siųstis (.apk)</b></a>,
+				<a href="https://github.com/DrFlarre/tvarkarastis/archive/v1.3.zip">programos kodas (.zip)</a>
+			</div>
+			<div class="versija darkBackground">
+				<h3>v1.2 </h3>
+				<i><div class="DC" id="DC-2">Parsisiuntimų: NaN</div></i>
+				<div class="aprasymas">
+					Pirmoji programos versija, paskelbta internete! :D<br>
+				</div>
+				<a href="https://github.com/DrFlarre/Tvarkarastis/releases/download/v1.2/gvg-tvarkarastis-v1.2.apk"><b>Siųstis (.apk)</b></a>,
+				<a href="https://github.com/DrFlarre/Tvarkarastis/archive/v1.2.zip"> programos kodas (.zip)</a>
+			</div>
+		</div>
+</div>
+<div class="DUK">
+	<h2>DAŽNIAUSIAI UŽDUODAMI KLAUSIMAI</h2>
+	<br>
+	<h3>Bendrieji klausimai</h3>
+	<br>
+	<b>K: Neleidžia įrašyti programos, ką daryti?</b><br>
+	<b>A: </b>Nustatymuose turite leisti įrašyti programas iš <i>„unknown sources”</i>, pasieškokit, kaip tai padaryti.<br>
+	<br>
+	<b>K: Kodėl neįkeli į Play Store ar kur nors?</b><br>
+	<b>A:</b> Nenoriu leisti 25$ registracijai.<br>
+	<br>
+	<b>K: Kiek užtrukai kurdamas tokį dalyką?</b><br>
+	<b>A:</b> Kadangi pradėjau nieko nemokėdamas, ilgai... Jeigu reiktų daryti antrą
+	kartą, užtrukčiau mažiau.<br>
+	<br>
+	<h3>Programos problemos ir paaiškinimai</h3>
+	<br>
+	<b>Mokinio pasirinkimas:</b><br>
+	→ Nustatymai > Mokinio pasirinkimas<br>
+	→ Atnaujinti sąrašą<br>
+	→ Pasirinkti I-II arba III-IV klases<br>
+	→ Spausti ant norimo vardo<br>
+	→ "Išsaugoti ir grįžti"<br>
+	<br>
+	<b>Mokinio išsaugojimas (pažymėjimas):</b><br>
+	→ Nustatymai > Mokinio pasirinkimas<br>
+	→ Palaikyti paspaudus mokinio vardą<br>
+	<i>* Norint ištrinti (atžymėti) - palaikyti paspaudus vardą išsaugotų mokinių sąraše<br></i>
+	<br>
+	<b>Rodomo pranešimo panaikinimas:</b><br>
+	→ Nustatymai > Pranešimų nustatymai<br>
+	→ Pranešimai: Išjungti<br>
+	<br>
+	<b>Widget (valdiklis) atsinaujina:</b><br>
+	→ Kas 3 valandas (automatiškai)<br>
+	→ Pasirinkus mokinį nustatymuose<br>
+	→ Paspaudus "Atnaujinti pamokas"<br>
+	<br>
+	<b>"Programa neveikia", kitos problemos:</b><br>
+	→ Atnaujinkite pamokų ir mokinių sąrašą<br>
+	→ Ištrinkite programos duomenis:<br><i>
+	* Telefono nustatymai > programos<br>
+	* "Tvarkaraštis"<br>
+	* Išvalyti programos duomenis (clear data)</i><br>
+	→ Iš naujo įsirašykite programą<br>
+	→ Blogiausiu atveju - susisiekite<br>
+	<br>
+	<b>Nerodo pranešimų:</b><br>
+	* Kai kuriuose telefonuose įrašyta programinė įranga stabdo programos veikimą arba blokuoja prieigą prie pranešimų sistemos<br>
+	→ Nustatymuose suteikite prieigą prie pranešimų<br>
+	→ Įrašykite į išimtis veikimą reguliuojančioje programoje<br>
+	<i>* Vieno sprendimo visiems telefonų modeliams ir programinės įrangos versijoms nėra, ieškokite informacijos savo modeliui internete</i>
+</div>
+<div class="gitHub">
+	<a href="https://github.com/DrFlarre/tvarkarastis">Naujausias programos kodas (GitHub)</a>
+</div>
+<div class="credits">
+	Eidenis Kasperavičius, 2018
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+	var touchDevice = ('ontouchstart' in document.documentElement);
+	if(!touchDevice)
+		document.getElementById("slides").style.display = "none";
+
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	var timeoutVar;
+	timeoutVar = setTimeout(incrDivs, 4000);
+	resetTimeout();
+
+	function resetTimeout() {
+		clearTimeout(timeoutVar);
+		timeoutVar = setTimeout(incrDivs, 4000);
+	}
+	function incrDivs() {
+		showDivs(slideIndex += 1);
+		resetTimeout();
+	}
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+		resetTimeout();
+	}
+	function currentDiv(n) {
+		showDivs(slideIndex = n);
+		resetTimeout();
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("slide");
+		var dots = document.getElementsByClassName("demo");
+		if(n > x.length)
+			slideIndex = 1;
+		if(n < 1)
+			slideIndex = x.length;
+		if(touchDevice) {
+			for(i = 0; i < x.length; i++)
+				x[i].style.display = "none";
+			x[slideIndex-1].style.display = "block";
+		}
+		for(i = 0; i < dots.length; i++)
+			dots[i].className = dots[i].className.replace("opacity-off", "");
+		dots[slideIndex -1].className += " opacity-off";
+	}
+
+	function toggleOlder() {
+		var x = document.getElementById("senesni");
+		var y = document.getElementById("toggleOlder");
+		if(x.style.display === "none" || x.style.display === "") {
+			x.style.display = "block";
+			y.style.background = "none";
+		} else {
+			x.style.display = "none";
+			y.style.background = "#BFBDCB";
+		}
+	}
+
+	$(document).ready (function () {
+			$.getJSON("https://api.github.com/repos/drflarre/tvarkarastis/releases").done(function (data) {
+				var x = document.getElementsByClassName("DC");
+				for(var i = 0; i < x.length; i++)
+					x[i].innerHTML = "Parsisiuntimų: " + data[i].assets[0].download_count;
+			})
+	});
+</script>
+</body>
+</html>

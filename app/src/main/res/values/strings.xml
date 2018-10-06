@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Tvarkaraštis</string>
+    <string name="main_link">http://www.vaivorykstesgimnazija.lt</string>
+
+    <!-- MAIN MENU -->
+    <string name="load_timetable">ATNAUJINTI PAMOKAS</string>
+    <string name="to_load_lessons">Atsidarykite NUSTATYMUS</string>
+    <string name="press_load">Norėdami pasirinkti mokinį</string>
+
+    <!-- LENTELĖ "ATNAUJINTI PAMOKAS"-->
+    <string name="lessons_were_1_dalis">Pamokos paskutinį kartą atnaujintos&#160;</string>
+    <string name="lessons_were_2_dalis">. Atsisiųsti iš naujo?</string>
+    <string name="download_new_lessons">TAIP, siųstis iš naujo</string>
+    <string name="use_old_lessons">NE, naudoti jau turimas</string>
+
+    <!-- BENDRI NUSTATYMAI -->
+    <string name="pasirinkti_content_description">Mygtukas \'Pasirinkti mokinį\'</string>
+    <string name="pranesimai_content_description">Mygtukas \'pranešimų nustatymai\'</string>
+    <string name="apie_content_description">Mygtukas \'Apie\'</string>
+    <string name="main_menu">IŠSAUGOTI IR GRĮŽTI</string>
+
+    <string name="naudojimasis">Naudojimasis programa (D.U.K.)</string>
+    <string name="naudojimasis_contents">
+        <b>Mokinio pasirinkimas:</b>\n
+        -> Nustatymai > Mokinio pasirinkimas\n
+        -> Atnaujinti sąrašą\n
+        -> Pasirinkti I-II arba III-IV klases\n
+        -> Spausti ant norimo vardo\n
+        -> \"Išsaugoti ir grįžti\"\n
+        \n
+        <b>Mokinio išsaugojimas (pažymėjimas):</b>\n
+        -> Nustatymai > Mokinio pasirinkimas\n
+        -> Palaikyti paspaudus mokinio vardą\n
+        <i>* Norint ištrinti (atžymėti) - palaikyti paspaudus vardą išsaugotų mokinių sąraše\n</i>
+        \n
+        <b>Rodomo pranešimo panaikinimas:</b>\n
+        -> Nustatymai > Pranešimų nustatymai\n
+        -> Pranešimai: Išjungti\n
+        \n
+        <b>Widget (valdiklis) atsinaujina:</b>\n
+        -> Kas 3 valandas (automatiškai)\n
+        -> Pasirinkus mokinį nustatymuose\n
+        -> Paspaudus \"Atnaujinti pamokas\"\n
+        \n
+        <b>\"Programa neveikia\", kitos problemos:</b>\n
+        -> Atnaujinkite pamokų ir mokinių sąrašą\n
+        -> Ištrinkite programos duomenis:\n<i>
+            \t\t\t-> Telefono nustatymai > programos\n
+            \t\t\t-> \"Tvarkaraštis\"\n
+            \t\t\t-> Išvalyti programos duomenis (clear data)</i>\n
+        -> Iš naujo įsirašykite programą\n
+        -> Blogiausiu atveju - usisiekite\n
+        \n
+        <b>Nerodo pranešimų:</b>\n
+        * Kai kuriuose telefonuose įrašyta programinė įranga stabdo programos veikimą arba blokuoja prieigą prie pranešimų sistemos\n
+        -> Nustatymuose suteikite prieigą prie pranešimų\n
+        -> Įrašykite į išimtis veikimą reguliuojančioje programoje\n
+        <i>* Vieno sprendimo visiems telefonų modeliams nėra, ieškokite informacijos savo modeliui internete</i>
+    </string>
+    <string name="copyright">Eidenis Kasperavičius 2018</string>
+
+    <!-- MOKINIO PASIRINKIMO NUSTATYMAI -->
+    <string name="mygtukas_atnaujinti">ATNAUJINTI SĄRAŠĄ</string>
+    <string name="iveskite_varda">Įveskite vardą</string>
+    <string name="press_load_names">Spauskite ATNAUJINTI SĄRAŠĄ</string>
+    <string name="rodomi_mokiniai">Rodomi mokiniai:&#160;</string>
+    <string name="III_IV">III-IV klasės</string>
+    <string name="I_II">I-II klasės</string>
+    <string name="pazymeti_vardai">IŠSAUGOTI MOKINIAI</string>
+    <string name="palaikykite_paspaude">Palaikykite paspaudę vardą, kad išsaugotumėte viršuje</string>
+    <string name="set_link_for">Pasirinktas mokinys:&#160;</string>
+    <string name="pazymetas_mokinys">Išsaugotas mokinys:&#160;</string>
+
+    <!-- LENTELĖ "ATNAUJINTI SĄRAŠĄ" -->
+    <string name="list_was_updated">Mokinių sąrašas paskutinį kartą atnaujintas&#160;</string>
+    <string name="list_was_updated_2_dalis">. Atsisiųsti iš naujo?</string>
+    <string name="download_new_list">TAIP, siųstis iš naujo</string>
+    <string name="use_old_list">NE, naudoti jau turimą</string>
+
+    <!-- PRANEŠIMŲ NUSTATYMAI -->
+    <string name="pranesimai_title">Pranešimai:&#160;</string>
+    <string name="isjungus_pranesimus">Atšaukti visi esami ir būsimi pranešimai</string>
+    <string name="ispejimas_del_pranesimu">Paaiškinimus, kaip veikia pranešimų sistema, rasite \'Apie\' dalyje</string>
+
+    <!-- INFORMACIJOS NUSTATYMAI -->
+    <string name="informacija_title">Pamokos informacija:&#160;</string>
+    <string name="smulki_informacija">Smulki informacija</string>
+    <string name="pabaigos_laikas">Pabaigos laikas</string>
+
+    <!-- VIBRACIJOS NUSTATYMAI-->
+    <string name="vibracija_title">Vibracija:&#160;</string>
+    <string name="panaikinimas_title">Panaikinimas:&#160;</string>
+
+    <!-- PANAIKINIMO NUSTATYMAI-->
+    <string name="panaikinimai_ijungti">Pranešimą galima panaikinti nubraukiant į šoną</string>
+    <string name="panaikinimai_isjungti">Pranešimo negalima panaikinti nubraukiant į šoną</string>
+
+    <!-- ATNAUJINIMO LAIKO NUSTATYMAI -->
+    <string name="atsaukti">ATŠAUKTI</string>
+    <string name="gerai">GERAI</string>
+
+    <!-- APKIRPIMO NUSTATYMAI -->
+    <string name="apkirpimas_title">\'Apkirpimas\':&#160;</string>
+    <string name="nukirpimas_on">\'Nukerpamas\' pirmas žodis nuo pamokos pavadinimo: \'III programavimas A\' => \'programavimas A\'</string>
+    <string name="nukirpimas_isjungtas">Pamokos pavadinimas nekeičiamas</string>
+    <string name="atnaujinkite_pamokas_warning">Atnaujinkite pamokas, kad įvyktų pakeitimai</string>
+    <string name="gali_issikraipyti_warning">Gali išsikraipyti pamokų pavadinimai</string>
+
+    <!-- AUTOMATINIO ATNAUJINIMO NUSTATYMAI -->
+    <string name="pamoku_atnaujinimas_title">Pamokų atnaujinimas:&#160;</string>
+    <string name="autoUpdate_ijungtas">Savaitgaliais pamokos automatiškai atnaujinamos</string>
+    <string name="autoUpdate_isjungtas">Pamokos atnaujinamos tik rankiniu būdu</string>
+
+    <!-- ERRORS -->
+    <string name="nepavyko_gauti_uzduoties">Nepavyko gauti priminimo užduoties\nPerkraukite programą bei iš naujo nustatykite priminimus</string>
+    <string name="nepavyko_atsisiusti">Nepavyko atsisiųsti reikalingos informacijos\nPatikrinkite interneto ryšį arba bandykite dar kartą</string>
+    <string name="nepavyko_atnaujinti_priminimu">Nepavyko atnaujinti priminimų\nPasirinkinte mokinį ir atnaujinkite tvarkaraštį</string>
+    <string name="atnaujinkite_sarasa">Atnaujinkite sąrašą</string>
+    <string name="pasirinkite_mokini">Pasirinkite mokinį nustatymuose</string>
+    <string name="keisti_spalvas">Keisti Spalvas</string>
+    <string name="pasikeis_grizus">Pasikeis grįžus į pradinį ekraną</string>
+    <string name="pamoku_sarasas_tuscias">Pamokų sąrašas tuščias</string>
+
+    <string name="nauja_versija">Yra nauja programos versija, ją galite atisiųsti iš\n<b>drflarre.github.io/tvarkarastis</b></string>
+    <string name="version_update_title">Programos atnaujinimas:&#160;</string>
+    <string name="klaida_main_link1">Klaida siunčiantis tvarkaraščio nuorodą (\"Tvarkaraštis\" 404/403)</string>
+    <string name="klaida_main_link2">Klaida siunčiantis tvarkaraščio nuorodą (target 404)</string>
+    <string name="atzymetas_mokinys">Atžymėtas mokinys:&#160;</string>
+</resources>
