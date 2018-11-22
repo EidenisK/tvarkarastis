@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidConfiguredLogFilters">
-    <filters>
-      <filter>
-        <option name="logLevel" value="debug" />
-        <option name="logMessagePattern" value="" />
-        <option name="logTagPattern" value="myDebug" />
-        <option name="name" value="myDebug" />
-        <option name="packageNamePattern" value="" />
-        <option name="pid" value="" />
-      </filter>
-    </filters>
-  </component>
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="myDebug" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1dcd6fb-763b-40d3-a2a9-f91657ea3c46" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,253 +21,16 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$/app">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MyApplication" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SelectSettingsActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="411" column="27" lean-forward="false" selection-start-line="411" selection-start-column="27" selection-end-line="411" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3931#3954#0" expanded="true" />
-                <element signature="e#9260#9299#0" expanded="true" />
-                <element signature="e#9658#9696#0" expanded="true" />
-                <element signature="e#11649#11676#0" expanded="true" />
-                <element signature="e#11765#11789#0" expanded="true" />
-                <element signature="e#12599#12639#0" expanded="true" />
-                <element signature="e#12642#12683#0" expanded="true" />
-                <element signature="e#13676#13709#0" expanded="true" />
-                <element signature="e#13712#13752#0" expanded="true" />
-                <element signature="e#15524#15560#0" expanded="true" />
-                <element signature="e#16709#16746#0" expanded="true" />
-                <element signature="e#17040#17077#0" expanded="true" />
-                <element signature="e#19072#19104#0" expanded="true" />
-                <element signature="e#20466#20502#0" expanded="true" />
-                <element signature="e#20550#20594#0" expanded="true" />
-                <element signature="e#20664#20701#0" expanded="true" />
-                <element signature="e#20736#20768#0" expanded="true" />
-                <element signature="e#20815#21045#0" expanded="true" />
-                <element signature="e#21044#21045#0" expanded="true" />
-                <element signature="e#21091#21355#0" expanded="true" />
-                <element signature="e#21354#21355#0" expanded="true" />
-                <element signature="e#21400#21553#0" expanded="true" />
-                <element signature="e#21552#21553#0" expanded="true" />
-                <element signature="e#21781#21990#0" expanded="true" />
-                <element signature="e#21989#21990#0" expanded="true" />
-                <element signature="e#22363#22386#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="108" column="10" lean-forward="false" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_select_settings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_select_settings.xml">
-          <provider selected="true" editor-type-id="android-designer2">
+    <leaf>
+      <file leaf-file-name="KETbilietai.lt B kategorija_com.theory.carlt.apk" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Downloads/KETbilietai.lt B kategorija_com.theory.carlt.apk">
+          <provider selected="true" editor-type-id="apk-viewer">
             <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="1351">
-              <caret line="553" column="59" lean-forward="false" selection-start-line="553" selection-start-column="59" selection-end-line="553" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MokiniaiAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MokiniaiAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-290">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mokiniai_list_row.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mokiniai_list_row.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Funkcijos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="469" column="23" lean-forward="false" selection-start-line="469" selection-start-column="23" selection-end-line="469" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#getLaikas#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#getLaikas#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#getDiena#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#getDiena#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#parinktiDiena#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#parinktiDiena#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#atnaujintiPabaigosLaika#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#analyzeString#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#updateWidget#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#findNameInString#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#getList#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#setList#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#setList#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#getPamokuLaikas#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#getPamokuLaikas#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#getTvarkarastis#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#getString#0;class#Funkcijos#0" expanded="false" />
-                <element signature="e#14759#16142#0" expanded="true" />
-                <element signature="e#16020#16048#0" expanded="true" />
-                <element signature="e#16141#16142#0" expanded="true" />
-                <element signature="e#16291#16328#0" expanded="true" />
-                <element signature="e#16388#16931#0" expanded="true" />
-                <element signature="e#16852#16878#0" expanded="true" />
-                <element signature="e#16930#16931#0" expanded="true" />
-                <element signature="e#17736#17762#0" expanded="true" />
-                <element signature="docComment;method#nustatytiPriminimus#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#setNotificationAlarm#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#setNotificationAlarm#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#setAlarm#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#setAlarm#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#nustatytiKitaiDienai#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#nustatytiKitaiDienai#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#nustatytiAtsaukima#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#nustatytiAtsaukima#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#atsauktiPriminimus#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#atsauktiPriminimus#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#pakeistiPriminimus#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#pakeistiPriminimus#0;class#Funkcijos#0" expanded="false" />
-                <element signature="docComment;method#removeNotification#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#removeNotification#0;class#Funkcijos#0" expanded="false" />
-                <element signature="method#nustatytiPamokuAtnaujinima#0;class#Funkcijos#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyNewIntentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyNewIntentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="69" column="38" lean-forward="false" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="resourceFile" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>&quot;priminimai&quot;</find>
-      <find>priminim</find>
-      <find>atsauktiP</find>
-      <find>&quot;current</find>
-      <find>analyze</find>
-      <find>Log.d</find>
-      <find>Mokinys</find>
-      <find>.favo</find>
-      <find>finished</find>
-      <find>dialog</find>
-      <find>nustatytisa</find>
-      <find>message</find>
-      <find>service</find>
-      <find>lesson</find>
-      <find>broadcas</find>
-      <find>nustatytiLink</find>
-      <find>rodomi</find>
-      <find>handler</find>
-      <find>pazy</find>
-      <find>textview3</find>
-      <find>LongClick</find>
-      <find>log</find>
-      <find>log.d</find>
-      <find>log.d()</find>
-    </findStrings>
-  </component>
-  <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\Users\DrFlarre\Documents\Android\android1.jks" />
-    <option name="KEY_ALIAS" value="key0" />
-    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -304,14 +51,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="MyApplication" />
+              <option name="name" value="tvarkarastis" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="MyApplication" />
+                <option name="name" value="tvarkarastis" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -329,7 +76,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'MyApplication'." />
+                <option name="description" value="Displays the sub-projects of root project 'tvarkarastis'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -379,7 +126,7 @@
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'MyApplication'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'tvarkarastis'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -401,7 +148,7 @@
                 <option name="name" value="bundleAppClassesDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'MyApplication' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'tvarkarastis' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -424,7 +171,7 @@
                 <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'MyApplication'." />
+                <option name="description" value="Displays all dependencies declared in root project 'tvarkarastis'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -505,7 +252,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'MyApplication'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'tvarkarastis'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -634,7 +381,7 @@
                 <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'MyApplication'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'tvarkarastis'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -935,12 +682,12 @@
                 <option name="name" value="transformDexArchiveWithDexMergerForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'MyApplication'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'tvarkarastis'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'MyApplication'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'tvarkarastis'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -1071,7 +818,7 @@
                 <option name="name" value="generateReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'MyApplication'." />
+                <option name="description" value="Displays the properties of root project 'tvarkarastis'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -2137,7 +1884,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="MyApplication" />
+              <option name="name" value="tvarkarastis" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/announce" />
@@ -2301,56 +2048,12 @@
       </map>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/BootService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyReceiver.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/widget_background_light.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Pamoka.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/pamokos_list_row.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/widget_info_dark.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/widget_layout_dark.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_one_button_dialog.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/widget_light_info.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/widget_info_transparent.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/widget_layout_transparent.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyWidgetProviderLight.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyWidgetProvider.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/WidgetService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/widget_layout_light.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/widget_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/widget_item_dark.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/widget_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/widget_info.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/widget_info_light.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/mokiniai_list_row.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Mokinys.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MokiniaiAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/ListRemoteViewsFactory.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_select_settings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyNewIntentService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="673" />
     <option name="width" value="694" />
     <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
@@ -2366,90 +2069,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyApplication" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="MyApplication" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="MyApplication" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myapplication" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyApplication" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="MyApplication" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="MyApplication" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="MyApplication" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="xml" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="MyApplication" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="4d001c1110d040d1" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="ExportApk.ApkPath" value="C:\Users\DrFlarre\Documents\Android\MyApplication\app" />
-    <property name="ExportApk.Flavors" value="" />
-    <property name="ExportApk.BuildType" value="release" />
-    <property name="ExportApk.SignV1" value="true" />
-    <property name="ExportApk.SignV2" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.user.myapplication" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\DrFlarre\Documents\Android\MyApplication\app\src\main\res\layout" />
-      <recent name="C:\Users\DrFlarre\Documents\Android\MyApplication\app\src\main\res\xml" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/KETbilietai.lt B kategorija_com.theory.carlt.apk" />
+    <property name="AnalyzeApkAction.lastApkPath" value="$USER_HOME$/Downloads/KETbilietai.lt B kategorija_com.theory.carlt.apk" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2487,7 +2118,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -2499,7 +2130,7 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -2607,624 +2238,61 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e1dcd6fb-763b-40d3-a2a9-f91657ea3c46" name="Default" comment="" />
-      <created>1534947267209</created>
+      <changelist id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="" />
+      <created>1542051126610</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1534947267209</updated>
+      <updated>1542051126610</updated>
     </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <created>1535534324113</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1535534324113</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Pridėtas programos atidarymas, paspaudus widget&#10;Pakeista widget preview nuotrauka bei minimalus dydis">
-      <created>1537011237240</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1537011237240</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Pridėtas programos atidarymas, paspaudus widget&#10;Pakeista widget preview nuotrauka bei minimalus dydis">
-      <created>1537011327332</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1537011327332</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Pridėtas versijos tikrinimas&#10;pakeista verija į 1,3 (testavimui)">
-      <created>1537088655581</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1537088655581</updated>
-    </task>
-    <task id="LOCAL-00005" summary="pabaigtas versijos tikrinimo kūrimas&#10;pakeista versija atgal į v1.2">
-      <created>1537090142799</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1537090142799</updated>
-    </task>
-    <task id="LOCAL-00006" summary="improved version update system">
-      <created>1537091229584</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1537091229584</updated>
-    </task>
-    <task id="LOCAL-00007" summary="built and removed .apk">
-      <created>1537091423699</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1537091423699</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added second widget&#10;transparent widget background&#10;update list on download finish">
-      <created>1537621656027</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1537621656027</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added .gitignore">
-      <created>1538159414598</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1538159414598</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added .gitignore">
-      <created>1538159435323</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1538159435323</updated>
-    </task>
-    <task id="LOCAL-00011" summary="įdėtas automatinis tvarkaraščio nuorodos gavimas&#10;pakeista &quot;išsaugotų mokinių&quot; sistema&#10;pridėti mokytojai ir kabinetai&#10;nebereikia perjungti tarp I-II ir III-IV klasių">
-      <created>1538586466167</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1538586466167</updated>
-    </task>
-    <task id="LOCAL-00012" summary="bug fixes&#10;enabled download">
-      <created>1538591996677</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1538591996677</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.50303954" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28723404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2993421" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25455928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Pridėtas programos atidarymas, paspaudus widget&#10;Pakeista widget preview nuotrauka bei minimalus dydis" />
-    <MESSAGE value="Pridėtas versijos tikrinimas&#10;pakeista verija į 1,3 (testavimui)" />
-    <MESSAGE value="pabaigtas versijos tikrinimo kūrimas&#10;pakeista versija atgal į v1.2" />
-    <MESSAGE value="improved version update system" />
-    <MESSAGE value="built and removed .apk" />
-    <MESSAGE value="added second widget&#10;transparent widget background&#10;update list on download finish" />
-    <MESSAGE value="added .gitignore" />
-    <MESSAGE value="įdėtas automatinis tvarkaraščio nuorodos gavimas&#10;pakeista &quot;išsaugotų mokinių&quot; sistema&#10;pridėti mokytojai ir kabinetai&#10;nebereikia perjungti tarp I-II ir III-IV klasių" />
-    <MESSAGE value="bug fixes&#10;enabled download" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes&#10;enabled download" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="3" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="8" lean-forward="false" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/BootService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="76" lean-forward="true" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MokiniaiAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="37" column="52" lean-forward="false" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/RecyclerItemClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/ListRemoteViewsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mokiniai_list_row.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Pamoka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pamokos_list_row.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/BootService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/widget_info_dark.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_layout_dark.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/widget_preview.9.png" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/widget_preview.png">
-      <provider selected="true" editor-type-id="images">
+    <entry file="file://$USER_HOME$/Downloads/KETbilietai.lt B kategorija_com.theory.carlt.apk">
+      <provider selected="true" editor-type-id="apk-viewer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_one_button_dialog.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/RecyclerItemClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/widget_light_info.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/list_divider_dark.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_layout_transparent.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/widget_info_transparent.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyWidgetProviderLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyWidgetProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="57" column="52" lean-forward="false" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/WidgetService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="106" lean-forward="false" selection-start-line="8" selection-start-column="106" selection-end-line="8" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_layout.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/font/open_sans.ttf">
-      <provider selected="true" editor-type-id="fontseditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_layout_light.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_item_dark.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/widget_info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/widget_info_light.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="75" column="70" lean-forward="false" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Mokinys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/ListRemoteViewsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MokiniaiAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="108" column="10" lean-forward="false" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_select_settings.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1351">
-          <caret line="553" column="59" lean-forward="false" selection-start-line="553" selection-start-column="59" selection-end-line="553" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mokiniai_list_row.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyNewIntentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="69" column="38" lean-forward="false" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="469" column="23" lean-forward="false" selection-start-line="469" selection-start-column="23" selection-end-line="469" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getLaikas#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#getLaikas#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#getDiena#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#getDiena#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#parinktiDiena#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#parinktiDiena#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#atnaujintiPabaigosLaika#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#analyzeString#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#updateWidget#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#findNameInString#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#getList#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#setList#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#setList#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#getPamokuLaikas#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#getPamokuLaikas#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#getTvarkarastis#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#getString#0;class#Funkcijos#0" expanded="false" />
-            <element signature="e#14759#16142#0" expanded="true" />
-            <element signature="e#16020#16048#0" expanded="true" />
-            <element signature="e#16141#16142#0" expanded="true" />
-            <element signature="e#16291#16328#0" expanded="true" />
-            <element signature="e#16388#16931#0" expanded="true" />
-            <element signature="e#16852#16878#0" expanded="true" />
-            <element signature="e#16930#16931#0" expanded="true" />
-            <element signature="e#17736#17762#0" expanded="true" />
-            <element signature="docComment;method#nustatytiPriminimus#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#setNotificationAlarm#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#setNotificationAlarm#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#setAlarm#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#setAlarm#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#nustatytiKitaiDienai#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#nustatytiKitaiDienai#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#nustatytiAtsaukima#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#nustatytiAtsaukima#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#atsauktiPriminimus#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#atsauktiPriminimus#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#pakeistiPriminimus#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#pakeistiPriminimus#0;class#Funkcijos#0" expanded="false" />
-            <element signature="docComment;method#removeNotification#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#removeNotification#0;class#Funkcijos#0" expanded="false" />
-            <element signature="method#nustatytiPamokuAtnaujinima#0;class#Funkcijos#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="411" column="27" lean-forward="false" selection-start-line="411" selection-start-column="27" selection-end-line="411" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3931#3954#0" expanded="true" />
-            <element signature="e#9260#9299#0" expanded="true" />
-            <element signature="e#9658#9696#0" expanded="true" />
-            <element signature="e#11649#11676#0" expanded="true" />
-            <element signature="e#11765#11789#0" expanded="true" />
-            <element signature="e#12599#12639#0" expanded="true" />
-            <element signature="e#12642#12683#0" expanded="true" />
-            <element signature="e#13676#13709#0" expanded="true" />
-            <element signature="e#13712#13752#0" expanded="true" />
-            <element signature="e#15524#15560#0" expanded="true" />
-            <element signature="e#16709#16746#0" expanded="true" />
-            <element signature="e#17040#17077#0" expanded="true" />
-            <element signature="e#19072#19104#0" expanded="true" />
-            <element signature="e#20466#20502#0" expanded="true" />
-            <element signature="e#20550#20594#0" expanded="true" />
-            <element signature="e#20664#20701#0" expanded="true" />
-            <element signature="e#20736#20768#0" expanded="true" />
-            <element signature="e#20815#21045#0" expanded="true" />
-            <element signature="e#21044#21045#0" expanded="true" />
-            <element signature="e#21091#21355#0" expanded="true" />
-            <element signature="e#21354#21355#0" expanded="true" />
-            <element signature="e#21400#21553#0" expanded="true" />
-            <element signature="e#21552#21553#0" expanded="true" />
-            <element signature="e#21781#21990#0" expanded="true" />
-            <element signature="e#21989#21990#0" expanded="true" />
-            <element signature="e#22363#22386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
