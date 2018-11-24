@@ -53,6 +53,7 @@ img {
 }
 .slide {
   display: none;
+  opacity: 0;
   max-height: 508px;
   margin: auto;
   margin-bottom: 10px;
@@ -218,12 +219,13 @@ body {
   margin-right: 10px;
 }
 
-.DC {
+.DC, .DC1 {
   display: inline;
 }
 
 #senesni {
   display: none;
+  border: 1px solid transparent;
 }
 
 a.anchor {

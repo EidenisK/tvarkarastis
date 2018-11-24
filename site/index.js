@@ -1,8 +1,6 @@
 function toggleAns(id) {
   var x = document.getElementsByClassName("ans");
-  if(x[id].style.display == "none" || x[id].style.display == "")
-    x[id].style.display = "block";
-  else x[id].style.display = "none";
+  $(x[id]).slideToggle();
 }
 
 $('.navbar-nav>li>a').on('click', function(){
@@ -41,7 +39,6 @@ function currentDiv(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("demo");
   if(n > x.length)
     slideIndex = 1;
   if(n < 1)
@@ -49,25 +46,35 @@ function showDivs(n) {
   for(i = 0; i < x.length; i++)
     x[i].style.display = "none";
   x[slideIndex-1].style.display = "block";
+
+  $(x[slideIndex -2]).animate({opacity: '0'}, "slow");
+  $(x[slideIndex -1]).animate({opacity: '1'}, "slow");  
 }
 
 function toggleOlder() {
-  var x = document.getElementById("senesni");
-  var y = document.getElementById("toggleOlder");
-  if(x.style.display === "none" || x.style.display === "") {
-    x.style.display = "block";
-    y.innerHTML = "SENESNI ↑";
-  } else {
-    x.style.display = "none";
-    y.innerHTML = "SENESNI ↓";
-  }
-
+  $("#senesni").slideToggle();
+  var x = document.getElementById("toggleOlder");
+  if(x.innerHTML === "SENESNI ↑")
+    x.innerHTML = "SENESNI ↓";
+  else x.innerHTML = "SENESNI ↑";
 }
 
 $(document).ready (function () {
-    $.getJSON("https://api.github.com/repos/drflarre/tvarkarastis/releases").done(function (data) {
-      var x = document.getElementsByClassName("DC");
-      for(var i = 0; i < x.length; i++)
+    var total = 0;
+    $.getJSON("https://api.github.com/repos/eidenisk/tvarkarastis/releases").done(function (data) {
+      var x = document.getElementsByClassName("DC1");
+      for(var i = 0; i < x.length; i++) {
         x[i].innerHTML = "Parsisiuntimų: " + data[i].assets[0].download_count;
+        total += data[i].assets[0].download_count;
+      }
+      $.getJSON("https://api.github.com/repos/drflarre/tvarkarastis/releases").done(function (data) {
+        var x = document.getElementsByClassName("DC");
+        for(var i = 0; i < x.length; i++) {
+          x[i].innerHTML = "Parsisiuntimų: " + data[i].assets[0].download_count;
+          total += data[i].assets[0].download_count;
+        }
+        var tDL = document.getElementById("total-downloads");
+        tDL.innerHTML = "PARSISIUNTIMAI <i>(viso: " + total + ")</i>";
+      })
     })
 });
