@@ -5,6 +5,15 @@ function toggleAns(id) {
   else x[id].style.display = "none";
 }
 
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    var href = $(this).attr("href");
+    $('html, body').animate({
+      scrollTop: $(href).offset().top
+    }, 500);
+    return false;
+});
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
