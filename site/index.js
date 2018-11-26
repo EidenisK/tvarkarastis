@@ -48,7 +48,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 
   $(x[slideIndex -2]).animate({opacity: '0'}, "slow");
-  $(x[slideIndex -1]).animate({opacity: '1'}, "slow");  
+  $(x[slideIndex -1]).animate({opacity: '1'}, "slow");
 }
 
 function toggleOlder() {
@@ -77,4 +77,13 @@ $(document).ready (function () {
         tDL.innerHTML = "PARSISIUNTIMAI <i>(viso: " + total + ")</i>";
       })
     })
+});
+
+var contact_send = document.querySelector("#contact_send");
+var title_text = document.querySelector("#title_text");
+var message_text = document.querySelector("#message_text");
+contact_send.addEventListener("click", function(e){
+  var title = title_text.value;
+  var message = message_text.value;
+  window.open("mailto:eidenis.gargzdai@gmail.com?subject=" + title + "&body=" + message, "_blank");
 });

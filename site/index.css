@@ -234,3 +234,27 @@ a.anchor {
     top: -80px;
     visibility: hidden;
 }
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  color: black;
+}
+#last {
+  margin: auto;
+  height: 100%;
+}
+
+#last_row {
+  display: flex;
+  align-items: center;
+}
+
+#contact_send {
+  color: white;
+  background: #474e5d;
+  border: none;
+  border-radius: 2px;
+  width: 100px;
+  font: Montserrat, sans-serif;
+}
