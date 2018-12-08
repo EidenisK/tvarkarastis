@@ -258,3 +258,7 @@ input, textarea {
   width: 100px;
   font: Montserrat, sans-serif;
 }
+
+#award {
+   color: rgb(255,215,0);
+}
