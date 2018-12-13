@@ -21,6 +21,11 @@ import com.google.gson.reflect.TypeToken;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -89,42 +94,51 @@ public class Funkcijos {
     /*----------------------------- Pamokų analizavimo funkcijos --------------------------------------*/
     /**Funkcija pamoku saraso HTML tekstui skaidyti i kintamuosius*/
     public static void analyzeString(String result, Tvarkarastis tvarkarastis, SharedPreferences mPrefs, Context context) {
-        String [] resultArr = result.split("\n", 0);
-        int busena = -1; //-1 <html>, 0 <body>, 1 <table>, 2 </table>
-        int padetis = 4; // = 4 + eilute * 6 + stulpelis
-        //pridedame 4, nes pirmoje eiluteje yra tik 1 stulpelis
         tvarkarastis.clear();
+        Document doc = Jsoup.parse(result);
+        try {
+            tvarkarastis.pavadinimas = doc.select("font[size=5]").get(0).text();
+            tvarkarastis.pavadinimas = tvarkarastis.pavadinimas.substring(0, 32) + "\n" + tvarkarastis.pavadinimas.substring(33);
+        } catch(Exception e) {
+            Log.d("myDebug", "ERROR");
+        }
 
-        for(String a : resultArr) { //kiekvienai naujai eilute HTML tekste
-            boolean tag = false;
-            String tempStr = ""; //gautas skaitomasis tekstas
-            int [] textBounds = new int[]{-1, -1}; //skaitomojo teksto pradzia ir pabaiga
+        Element table = doc.select("table").get(0);
+        Elements rows = table.select("tr");
+        tvarkarastis.klase = rows.get(0).select("td").get(0).text();
 
-            if(busena == 1 && a.contains("<td")) padetis++;
-            if(busena == -1 && a.contains("<body")) busena = 0; //prasideda matomas tekstas
-            else if(busena == 0 && a.contains("<table")) busena = 1; //prasideda lentele
-            else if(busena == 1 && a.contains("</table")) busena = 2; //pasibaigia lentele
+        for(int i = 2; i < rows.size(); i++) {
+            Elements cells = rows.get(i).select("td");
+            tvarkarastis.laikas[i-2] = cells.get(0).text();
 
-            //padetis / 6 -1: konvertuojame is masyvinio i paprastaji skaiciavima
-            if(busena == 1)
-                tvarkarastis.maxPamoku = Math.max(padetis / 6 -1, tvarkarastis.maxPamoku);
+            for(int j = 1; j < cells.size(); j++) {
+                tvarkarastis.pamokos[j-1][i-2] = new Pamoka();
+                tvarkarastis.pamokos[j-1][i-2].setLaikas(tvarkarastis.laikas[i-2]);
+                tvarkarastis.pamokos[j-1][i-2].setNumeris(i-1);
 
-            for(int i = 0; i < a.length(); i++) { //analizuojame skaitoma vieta sakinyje (simbolius)
-                if(!tag && a.charAt(i) == '<') {
-                    tag = true; //prasideda gaire
-                    if(textBounds[0] != -1 && textBounds[1] == -1)
-                        textBounds[1] = i; //pazymime vardo pabaiga, jeigu pradetas zymeti vardas ir prasideda gaire
-                } else if(tag && a.charAt(i) == '>')
-                    tag = false; //baigiasi gaire
-                else if(!tag && textBounds[0] == -1) //jeigu randame teksta tarp gairiu
-                    textBounds[0] = i; //pazymime vardo pradzia
+                String allText = cells.get(j).text();
+                String tempStr = cells.get(j).select("a").text();
+                if(tempStr.equals("/////") || tempStr.equals("           ")) continue;
+                tvarkarastis.pamokos[j-1][i-2].addMokytojai(allText.replaceAll(tempStr, "").trim().replaceAll("\\u00A0", ""));
+
+                if(mPrefs.getBoolean("nukirpimas", false)) {
+                    String [] words = tempStr.split(" ");
+                    words[0] = "";
+                    for(int idx = 0; idx < words.length; idx++) {
+                        if(words[idx].toLowerCase().equals("srautas".toLowerCase())) {
+                            words[idx] = "";
+                            words[idx -1] = "";
+                        } else if(words[idx].equals("A") || words[idx].equals("B"))
+                            words[idx] = "";
+                    }
+                    String final_string = "";
+                    for(int idx = 0; idx < words.length; idx++)
+                        if(!words[idx].equals(""))
+                            final_string += (idx != 0 && final_string.length() != 0 ? " " : "") + words[idx];
+                    tvarkarastis.pamokos[j-1][i-2].setPavadinimas(final_string);
+                } else
+                    tvarkarastis.pamokos[j-1][i-2].setPavadinimas(tempStr);
             }
-
-            if(textBounds[0] != -1 && textBounds[1] == -1)
-                textBounds[1] = a.length(); //jeigu radome tik gaires pradzia, bet ne pabaiga, uzbaigiame gaire sakinio pabaigoje
-            if(textBounds[0] != -1)
-                tempStr = a.substring(textBounds[0], textBounds[1]); //is tempStr sakinio isskiriame skaitomaji teksta
-            priskirtiInfo(mPrefs, context, tvarkarastis, tempStr, busena, padetis);
         }
 
         tvarkarastis.intLaikoSuma = Funkcijos.getPamokuLaikas(tvarkarastis, tvarkarastis.intLaikas);
@@ -276,6 +290,7 @@ public class Funkcijos {
         int suma = 0;
         for(int pamID = 0; pamID < tvarkarastis.maxPamoku; pamID++) {
             String temp = tvarkarastis.laikas[pamID];
+            Log.d("myDebug", temp);
             String[] laikas = new String[]{temp.substring(0, 2), temp.substring(3, 5), temp.substring(6, 8), temp.substring(9)};
             for (int i = 0; i < 2; i++)
                 for (int j = 0; j < 2; j++) {

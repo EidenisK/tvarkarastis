@@ -52,8 +52,8 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
 
     /**pamokos kintamuosius irasome i atitinkamus teksto laukelius*/
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
-        Pamoka pamoka = pamokosList.get(position);
+    public void onBindViewHolder(final MyViewHolder holder, int position) {
+        final Pamoka pamoka = pamokosList.get(position);
         if(pamoka.getPavadinimas().equals("")) {
             holder.pavadinimas.setText("");
             holder.info.setText("///");
