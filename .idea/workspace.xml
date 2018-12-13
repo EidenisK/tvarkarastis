@@ -11,15 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jsoup_jsoup_1_10_1_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -2392,6 +2384,14 @@
       <option name="presentableId" value="Default" />
       <updated>1542051126610</updated>
     </task>
+    <task id="LOCAL-00001" summary="Sutvarkyta klaida nuskaitant, kai tvarkaraštyje &quot;išbraukta&quot; diena (mokytojų tvarkaraščiuose)&#10;Klaidų taisymai...">
+      <created>1544715756752</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544715756752</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2430,6 +2430,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sutvarkyta klaida nuskaitant, kai tvarkaraštyje &quot;išbraukta&quot; diena (mokytojų tvarkaraščiuose)&#10;Klaidų taisymai..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sutvarkyta klaida nuskaitant, kai tvarkaraštyje &quot;išbraukta&quot; diena (mokytojų tvarkaraščiuose)&#10;Klaidų taisymai..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
