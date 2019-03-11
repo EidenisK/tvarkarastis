@@ -16,12 +16,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="Panaikintas mokytojo(-ų) laukelis prie pamokų (pasikeitė mokyklos svetainė)&#10;Pataisyta (tikiuosi) juodos programos piktogramos klaida&#10;Paspaudus ant pamokos atsidaro jos puslapis internete (klasės draugai, mokytojai, kabinetai...)&#10;Klaidų taisymai ir optimizacija">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tvarkarastis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tvarkarastis.iml" afterDir="false" />
-    </list>
+    <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="Panaikintas mokytojo(-ų) laukelis prie pamokų (pasikeitė mokyklos svetainė)&#10;Pataisyta (tikiuosi) juodos programos piktogramos klaida&#10;Paspaudus ant pamokos atsidaro jos puslapis internete (klasės draugai, mokytojai, kabinetai...)&#10;Klaidų taisymai ir optimizacija" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,13 +98,32 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
-              <caret line="130" column="103" selection-start-line="130" selection-start-column="103" selection-end-line="130" selection-end-column="103" />
+              <caret line="130" column="58" selection-start-line="130" selection-start-column="58" selection-end-line="130" selection-end-column="58" />
               <folding>
+                <element signature="e#3165#3338#0" expanded="true" />
+                <element signature="e#3337#3338#0" expanded="true" />
                 <element signature="e#3843#3876#0" expanded="true" />
-                <element signature="e#3962#4242#0" expanded="true" />
-                <element signature="e#4241#4242#0" expanded="true" />
-                <element signature="e#4349#5001#0" expanded="true" />
-                <element signature="e#5000#5001#0" expanded="true" />
+                <element signature="e#3954#4240#0" expanded="true" />
+                <element signature="e#4239#4240#0" expanded="true" />
+                <element signature="e#4267#4281#0" expanded="true" />
+                <element signature="e#4318#4471#0" expanded="true" />
+                <element signature="e#4470#4471#0" expanded="true" />
+                <element signature="e#4703#5355#0" expanded="true" />
+                <element signature="e#5354#5355#0" expanded="true" />
+                <element signature="e#8227#8254#0" expanded="true" />
+                <element signature="e#9209#9249#0" expanded="true" />
+                <element signature="e#9301#9341#0" expanded="true" />
+                <element signature="e#9411#9451#0" expanded="true" />
+                <element signature="e#9486#9521#0" expanded="true" />
+                <element signature="e#9568#9811#0" expanded="true" />
+                <element signature="e#9810#9811#0" expanded="true" />
+                <element signature="e#9857#10044#0" expanded="true" />
+                <element signature="e#10043#10044#0" expanded="true" />
+                <element signature="e#10089#10242#0" expanded="true" />
+                <element signature="e#10241#10242#0" expanded="true" />
+                <element signature="e#10449#10875#0" expanded="true" />
+                <element signature="e#10874#10875#0" expanded="true" />
+                <element signature="e#15936#15963#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3043,13 +3057,32 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
-          <caret line="130" column="103" selection-start-line="130" selection-start-column="103" selection-end-line="130" selection-end-column="103" />
+          <caret line="130" column="58" selection-start-line="130" selection-start-column="58" selection-end-line="130" selection-end-column="58" />
           <folding>
+            <element signature="e#3165#3338#0" expanded="true" />
+            <element signature="e#3337#3338#0" expanded="true" />
             <element signature="e#3843#3876#0" expanded="true" />
-            <element signature="e#3962#4242#0" expanded="true" />
-            <element signature="e#4241#4242#0" expanded="true" />
-            <element signature="e#4349#5001#0" expanded="true" />
-            <element signature="e#5000#5001#0" expanded="true" />
+            <element signature="e#3954#4240#0" expanded="true" />
+            <element signature="e#4239#4240#0" expanded="true" />
+            <element signature="e#4267#4281#0" expanded="true" />
+            <element signature="e#4318#4471#0" expanded="true" />
+            <element signature="e#4470#4471#0" expanded="true" />
+            <element signature="e#4703#5355#0" expanded="true" />
+            <element signature="e#5354#5355#0" expanded="true" />
+            <element signature="e#8227#8254#0" expanded="true" />
+            <element signature="e#9209#9249#0" expanded="true" />
+            <element signature="e#9301#9341#0" expanded="true" />
+            <element signature="e#9411#9451#0" expanded="true" />
+            <element signature="e#9486#9521#0" expanded="true" />
+            <element signature="e#9568#9811#0" expanded="true" />
+            <element signature="e#9810#9811#0" expanded="true" />
+            <element signature="e#9857#10044#0" expanded="true" />
+            <element signature="e#10043#10044#0" expanded="true" />
+            <element signature="e#10089#10242#0" expanded="true" />
+            <element signature="e#10241#10242#0" expanded="true" />
+            <element signature="e#10449#10875#0" expanded="true" />
+            <element signature="e#10874#10875#0" expanded="true" />
+            <element signature="e#15936#15963#0" expanded="true" />
           </folding>
         </state>
       </provider>
