@@ -16,8 +16,11 @@
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/numeris"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
         android:layout_toEndOf="@+id/numeris"
         android:fontFamily="@font/open_sans"
+        android:text="III programavimas A"
         android:textColor="@color/blackText"
         android:textSize="17sp"
         android:textStyle="bold" />
@@ -39,29 +42,22 @@
         android:id="@+id/laikas"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/pavadinimas"
-        android:layout_below="@+id/mokytojas"
+        android:layout_alignBaseline="@+id/numeris"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/numeris"
+        android:text="08:00-08:45"
         android:textColor="#333333"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/mokytojas"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/pavadinimas"
-        android:layout_below="@+id/pavadinimas"
-        android:textColor="@color/blackText"
-        android:textSize="16sp"
-        android:textStyle="italic" />
-
-    <TextView
         android:id="@+id/numeris"
         android:layout_width="wrap_content"
-        android:layout_height="68dp"
+        android:layout_height="58dp"
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:paddingEnd="8dp"
+        android:text="1"
         android:textAlignment="viewStart"
         android:textColor="@color/blackText"
         android:textSize="50sp" />

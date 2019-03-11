@@ -7,6 +7,8 @@ public class Pamoka
     public String laikas = "";
     public int numeris = 0;
 
+    private String nuoroda = "";
+
     void setPavadinimas(String pvd) {
         pavadinimas = pvd;
     }
@@ -26,6 +28,14 @@ public class Pamoka
         return laikas;
     }
     int getNumeris() { return numeris; }
+
+    String nuoroda() {
+        return nuoroda;
+    }
+
+    void nuoroda(String s) {
+        nuoroda = s;
+    }
 
     Pamoka() {}
     Pamoka(String s) {

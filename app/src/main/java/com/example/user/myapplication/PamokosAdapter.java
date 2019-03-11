@@ -3,6 +3,7 @@ package com.example.user.myapplication;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -25,14 +27,14 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
     SharedPreferences mPrefs;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView pavadinimas, laikas, info, numeris;
+        public TextView pavadinimas, laikas, /*info,*/ numeris;
 
         /**Randame teksto laukelius*/
         public MyViewHolder(View view, Context context) {
             super(view);
             pavadinimas = (TextView) view.findViewById(R.id.pavadinimas);
             laikas = (TextView) view.findViewById(R.id.laikas);
-            info = (TextView) view.findViewById(R.id.mokytojas);
+            //info = (TextView) view.findViewById(R.id.mokytojas);
             numeris = (TextView) view.findViewById(R.id.numeris);
         }
     }
@@ -55,19 +57,33 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         final Pamoka pamoka = pamokosList.get(position);
         if(pamoka.getPavadinimas().equals("")) {
-            holder.pavadinimas.setText("");
-            holder.info.setText("///");
+            //holder.pavadinimas.setText("");
+            holder.pavadinimas.setText("///");
+            //holder.info.setText("///");
             holder.laikas.setText("");
             holder.numeris.setText("");
 
-            holder.info.setGravity(Gravity.CENTER);
+            //holder.info.setGravity(Gravity.CENTER);
+            holder.pavadinimas.setGravity(Gravity.CENTER);
+
+            holder.itemView.setOnClickListener(null);
         } else {
             holder.pavadinimas.setText(pamoka.getPavadinimas());
-            holder.info.setText(pamoka.getMokytojai());
+            //holder.info.setText(pamoka.getMokytojai());
             holder.laikas.setText(pamoka.getLaikas());
             holder.numeris.setText(Integer.toString(pamoka.getNumeris()));
 
-            holder.info.setGravity(Gravity.START);
+            //holder.info.setGravity(Gravity.START);
+            holder.pavadinimas.setGravity(Gravity.START);
+
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //Toast.makeText(myContext, pamoka.nuoroda(), Toast.LENGTH_SHORT).show();
+                    Intent tinklalapioIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(pamoka.nuoroda()));
+                    myContext.startActivity(tinklalapioIntent);
+                }
+            });
         }
         holder.itemView.setBackgroundColor(selectBackgroundColor(position));
     }

@@ -72,7 +72,7 @@ class ListRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
             rv.setViewVisibility(R.id.pavadinimas2, View.VISIBLE);
             rv.setTextViewText(R.id.pavadinimas2, "///");
 
-            rv.setTextViewText(R.id.mokytojas, "");
+            //rv.setTextViewText(R.id.mokytojas, "");
             rv.setTextViewText(R.id.laikas, "");
             rv.setTextViewText(R.id.numeris, "");
         } else {
@@ -80,7 +80,7 @@ class ListRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
             rv.setViewVisibility(R.id.pavadinimas, View.VISIBLE);
             rv.setTextViewText(R.id.pavadinimas, pavadinimas);
 
-            rv.setTextViewText(R.id.mokytojas, pamoka.getMokytojai());
+            //rv.setTextViewText(R.id.mokytojas, pamoka.getMokytojai());
             rv.setTextViewText(R.id.laikas, pamoka.getLaikas());
             rv.setTextViewText(R.id.numeris, Integer.toString(pamoka.getNumeris()));
         }
@@ -94,7 +94,7 @@ class ListRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
         rv.setOnClickFillInIntent(R.id.pavadinimas, fillInIntent);
         rv.setOnClickFillInIntent(R.id.pavadinimas2, fillInIntent);
         rv.setOnClickFillInIntent(R.id.laikas, fillInIntent);
-        rv.setOnClickFillInIntent(R.id.mokytojas, fillInIntent);
+        //rv.setOnClickFillInIntent(R.id.mokytojas, fillInIntent);
         rv.setOnClickFillInIntent(R.id.numeris, fillInIntent);
 
         // You can do heaving lifting in here, synchronously. For example, if you need to

@@ -98,7 +98,12 @@ public class Funkcijos {
         Document doc = Jsoup.parse(result);
         try {
             tvarkarastis.pavadinimas = doc.select("font[size=5]").get(0).text();
-            tvarkarastis.pavadinimas = tvarkarastis.pavadinimas.substring(0, 32) + "\n" + tvarkarastis.pavadinimas.substring(33);
+            int end_of_1 = tvarkarastis.pavadinimas.indexOf("gimnazija") + 9;
+            int start_of_2 = end_of_1;
+            while( !Character.isLetterOrDigit( tvarkarastis.pavadinimas.charAt(start_of_2) ) )
+                start_of_2++;
+
+            tvarkarastis.pavadinimas = tvarkarastis.pavadinimas.substring(0, end_of_1) + "\n" + tvarkarastis.pavadinimas.substring(start_of_2);
         } catch(Exception e) {
             Log.d("myDebug", "ERROR");
         }
@@ -119,7 +124,7 @@ public class Funkcijos {
                 String allText = cells.get(j).text();
                 String tempStr = cells.get(j).select("a").text();
                 if(tempStr.equals("/////") || tempStr.equals("           ")) continue;
-                tvarkarastis.pamokos[j-1][i-2].addMokytojai(allText.replaceAll(tempStr, "").trim().replaceAll("\\u00A0", ""));
+                //tvarkarastis.pamokos[j-1][i-2].addMokytojai(allText.replaceAll(tempStr, "").trim().replaceAll("\\u00A0", ""));
 
                 if(mPrefs.getBoolean("nukirpimas", false)) {
                     String [] words = tempStr.split(" ");
@@ -138,6 +143,11 @@ public class Funkcijos {
                     tvarkarastis.pamokos[j-1][i-2].setPavadinimas(final_string);
                 } else
                     tvarkarastis.pamokos[j-1][i-2].setPavadinimas(tempStr);
+
+
+                String nuoroda_pamokai = mPrefs.getString("main_link", "null") + cells.get(j).select("a").attr("href");
+                //Log.d("myDebug", nuoroda_pamokai);
+                tvarkarastis.pamokos[j-1][i-2].nuoroda(nuoroda_pamokai);
             }
         }
 
@@ -163,57 +173,6 @@ public class Funkcijos {
         ids = AppWidgetManager.getInstance(context).getAppWidgetIds(new ComponentName(context.getApplicationContext(), MyWidgetProviderLight.class));
         intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids);
         context.sendBroadcast(intent);
-    }
-
-    /**Funkcija gauta tempStr sakini irasyti i atitinkama kintamaji tvarkarascio apraše*/
-    private static void priskirtiInfo(SharedPreferences mPrefs, Context context, Tvarkarastis tvarkarastis, String tempStr, int busena, int padetis) {
-        int stulpelis = padetis % 6 -1;
-        int eilute = padetis / 6 -2;
-
-        if(tempStr.length() > 0 && tempStr.charAt(0) != '&' && busena >= 0 && busena < 2) { //if string contains valuable text
-            if(busena == 0) {//pavadinimo tekstas
-                try {
-                    tempStr = tempStr.substring(0, 32) + "\n" + tempStr.substring(33);
-                } catch(Exception e) {
-                    Log.d("myDebug", "ERROR");
-                }
-                tvarkarastis.pavadinimas = tempStr;
-            } else {
-                if(eilute == -2) //klases tekstas
-                    tvarkarastis.klase = tempStr;
-                else if(eilute >= 0 && stulpelis == -1) //pamoku laiko tekstas
-                    tvarkarastis.laikas[eilute] = tempStr;
-                else if(eilute >= 0 && stulpelis >= 0) { //pamoku tekstai
-                    if(tvarkarastis.pamokos[stulpelis][eilute] == null || tvarkarastis.pamokos[stulpelis][eilute].getPavadinimas().equals("")) {
-                        tvarkarastis.pamokos[stulpelis][eilute] = new Pamoka();
-                        tvarkarastis.pamokos[stulpelis][eilute].setLaikas(tvarkarastis.laikas[eilute]);
-                        tvarkarastis.pamokos[stulpelis][eilute].setNumeris(eilute+1);
-
-                        if(mPrefs.getBoolean("nukirpimas", false)) {
-                            String [] words = tempStr.split(" ");
-                            words[0] = "";
-                            for(int idx = 0; idx < words.length; idx++) {
-                                if(words[idx].toLowerCase().equals("srautas".toLowerCase())) {
-                                    words[idx] = "";
-                                    words[idx -1] = "";
-                                } else if(words[idx].equals("A") || words[idx].equals("B"))
-                                    words[idx] = "";
-                            }
-                            String final_string = "";
-                            for(int idx = 0; idx < words.length; idx++)
-                                if(!words[idx].equals(""))
-                                    final_string += (idx != 0 && final_string.length() != 0 ? " " : "") + words[idx];
-                            tvarkarastis.pamokos[stulpelis][eilute].setPavadinimas(final_string);
-                        } else
-                            tvarkarastis.pamokos[stulpelis][eilute].setPavadinimas(tempStr);
-                    } else {
-                        if(!tvarkarastis.pamokos[stulpelis][eilute].getMokytojai().equals(""))
-                            tvarkarastis.pamokos[stulpelis][eilute].addMokytojai(", ");
-                        tvarkarastis.pamokos[stulpelis][eilute].addMokytojai(tempStr);
-                    }
-                }
-            }
-        }
     }
 
     public static String findNameInString(String a, boolean autoComplete) {
