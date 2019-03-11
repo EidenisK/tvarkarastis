@@ -121,7 +121,7 @@
     <string name="pasikeis_grizus">Pasikeis grįžus į pradinį ekraną</string>
     <string name="pamoku_sarasas_tuscias">Pamokų sąrašas tuščias</string>
 
-    <string name="nauja_versija">Yra nauja programos versija, ją galite atisiųsti iš\n<b>drflarre.github.io/tvarkarastis</b></string>
+    <string name="nauja_versija">Yra nauja programos versija, ją galite atisiųsti iš\n<b>bit.ly/gvgtvarkarastis</b> arba paspaudę ČIA</string>
     <string name="version_update_title">Programos atnaujinimas:&#160;</string>
     <string name="klaida_main_link1">Klaida siunčiantis tvarkaraščio nuorodą (\"Tvarkaraštis\" 404/403)</string>
     <string name="klaida_main_link2">Klaida siunčiantis tvarkaraščio nuorodą (target 404)</string>

@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
@@ -106,6 +107,15 @@ public class MainActivity extends AppCompatActivity {
         String text = getString(R.string.nauja_versija);
 
         dialog_text.setText(text);
+
+        dialog_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent tinklalapioIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://bit.ly/gvgtvarkarastis"));
+                startActivity(tinklalapioIntent);
+            }
+        });
+
         button.setText(R.string.gerai);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void checkForUpdates() {
-        Funkcijos.getString(getApplicationContext(), "https://drflarre.github.io/tvarkarastis/version.html", mPrefs, "web-version");
+        Funkcijos.getString(getApplicationContext(), "https://eidenisk.github.io/tvarkarastis/version.html", mPrefs, "web-version");
         BroadcastReceiver message = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
