@@ -16,9 +16,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="Panaikintas mokytojo(-ų) laukelis prie pamokų (pasikeitė mokyklos svetainė)&#10;Pataisyta (tikiuosi) juodos programos piktogramos klaida&#10;Paspaudus ant pamokos atsidaro jos puslapis internete (klasės draugai, mokytojai, kabinetai...)&#10;Klaidų taisymai ir optimizacija">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="Panaikintas mokytojo(-ų) laukelis prie pamokų (pasikeitė mokyklos svetainė)&#10;Pataisyta (tikiuosi) juodos programos piktogramos klaida&#10;Paspaudus ant pamokos atsidaro jos puslapis internete (klasės draugai, mokytojai, kabinetai...)&#10;Klaidų taisymai ir optimizacija" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
