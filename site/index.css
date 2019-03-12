@@ -208,6 +208,9 @@ body {
   .collapse.in{
       display:block !important;
   }
+  #gif {
+    width: 70vw;
+  }
 }
 
 #share-links {
