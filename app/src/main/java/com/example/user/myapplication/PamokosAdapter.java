@@ -4,9 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.provider.CalendarContract;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.EventLog;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -67,6 +69,7 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
             holder.pavadinimas.setGravity(Gravity.CENTER);
 
             holder.itemView.setOnClickListener(null);
+            holder.itemView.setOnLongClickListener(null);
         } else {
             holder.pavadinimas.setText(pamoka.getPavadinimas());
             //holder.info.setText(pamoka.getMokytojai());
@@ -79,9 +82,34 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //Toast.makeText(myContext, pamoka.nuoroda(), Toast.LENGTH_SHORT).show();
                     Intent tinklalapioIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(pamoka.nuoroda()));
                     myContext.startActivity(tinklalapioIntent);
+                }
+            });
+
+            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    Calendar beginTime = Calendar.getInstance();
+                    beginTime.set(Calendar.HOUR_OF_DAY, pamoka.int_laikas[0][0]);
+                    beginTime.set(Calendar.MINUTE, pamoka.int_laikas[0][1]);
+                    beginTime.set(Calendar.SECOND, 0);
+                    while(beginTime.get(Calendar.DAY_OF_WEEK) != pamoka.sav_diena + Calendar.MONDAY)
+                        beginTime.add(Calendar.DAY_OF_MONTH, 1);
+
+                    Calendar endTime = (Calendar) beginTime.clone();
+                    endTime.set(Calendar.HOUR_OF_DAY, pamoka.int_laikas[1][0]);
+                    endTime.set(Calendar.MINUTE, pamoka.int_laikas[1][1]);
+
+                    Intent intent = new Intent(Intent.ACTION_INSERT)
+                            .setData(CalendarContract.Events.CONTENT_URI)
+                            .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis())
+                            .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis())
+                            .putExtra(CalendarContract.Events.TITLE, pamoka.pavadinimas);
+
+                    if (intent.resolveActivity(myContext.getPackageManager()) != null)
+                        myContext.startActivity(intent);
+                    return false;
                 }
             });
         }

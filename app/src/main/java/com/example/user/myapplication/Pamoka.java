@@ -7,12 +7,14 @@ public class Pamoka
     public String laikas = "";
     public int numeris = 0;
 
+    int int_laikas[][] = new int[2][2];
+    int sav_diena;
+
     private String nuoroda = "";
 
     void setPavadinimas(String pvd) {
         pavadinimas = pvd;
     }
-    void addMokytojai(String add) {mokytojai += add;}
     void setLaikas(String lks) {
         laikas = lks;
     }
@@ -29,10 +31,7 @@ public class Pamoka
     }
     int getNumeris() { return numeris; }
 
-    String nuoroda() {
-        return nuoroda;
-    }
-
+    String nuoroda() { return nuoroda; }
     void nuoroda(String s) {
         nuoroda = s;
     }
@@ -54,5 +53,13 @@ public class Pamoka
         mokytojai = "";
         laikas = "";
         numeris = 0;
+    }
+
+    void getIntLaikas()
+    {
+        String temp_string_laikas[] = laikas.split("[:-]");
+        for(int i = 0; i < 2; i++)
+            for(int j = 0; j < 2; j++)
+                int_laikas[i][j] = Integer.parseInt(temp_string_laikas[i*2+j]);
     }
 }

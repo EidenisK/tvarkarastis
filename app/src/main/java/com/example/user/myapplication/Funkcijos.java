@@ -120,6 +120,8 @@ public class Funkcijos {
                 tvarkarastis.pamokos[j-1][i-2] = new Pamoka();
                 tvarkarastis.pamokos[j-1][i-2].setLaikas(tvarkarastis.laikas[i-2]);
                 tvarkarastis.pamokos[j-1][i-2].setNumeris(i-1);
+                tvarkarastis.pamokos[j-1][i-2].sav_diena = j-1;
+                tvarkarastis.pamokos[j-1][i-2].getIntLaikas();
 
                 String allText = cells.get(j).text();
                 String tempStr = cells.get(j).select("a").text();
