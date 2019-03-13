@@ -90,25 +90,29 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
             holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
-                    Calendar beginTime = Calendar.getInstance();
-                    beginTime.set(Calendar.HOUR_OF_DAY, pamoka.int_laikas[0][0]);
-                    beginTime.set(Calendar.MINUTE, pamoka.int_laikas[0][1]);
-                    beginTime.set(Calendar.SECOND, 0);
-                    while(beginTime.get(Calendar.DAY_OF_WEEK) != pamoka.sav_diena + Calendar.MONDAY)
-                        beginTime.add(Calendar.DAY_OF_MONTH, 1);
+                    try {
+                        Calendar beginTime = Calendar.getInstance();
+                        beginTime.set(Calendar.HOUR_OF_DAY, pamoka.int_laikas[0][0]);
+                        beginTime.set(Calendar.MINUTE, pamoka.int_laikas[0][1]);
+                        beginTime.set(Calendar.SECOND, 0);
+                        while (beginTime.get(Calendar.DAY_OF_WEEK) != pamoka.sav_diena + Calendar.MONDAY)
+                            beginTime.add(Calendar.DAY_OF_MONTH, 1);
 
-                    Calendar endTime = (Calendar) beginTime.clone();
-                    endTime.set(Calendar.HOUR_OF_DAY, pamoka.int_laikas[1][0]);
-                    endTime.set(Calendar.MINUTE, pamoka.int_laikas[1][1]);
+                        Calendar endTime = (Calendar) beginTime.clone();
+                        endTime.set(Calendar.HOUR_OF_DAY, pamoka.int_laikas[1][0]);
+                        endTime.set(Calendar.MINUTE, pamoka.int_laikas[1][1]);
 
-                    Intent intent = new Intent(Intent.ACTION_INSERT)
-                            .setData(CalendarContract.Events.CONTENT_URI)
-                            .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis())
-                            .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis())
-                            .putExtra(CalendarContract.Events.TITLE, pamoka.pavadinimas);
+                        Intent intent = new Intent(Intent.ACTION_INSERT)
+                                .setData(CalendarContract.Events.CONTENT_URI)
+                                .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis())
+                                .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis())
+                                .putExtra(CalendarContract.Events.TITLE, pamoka.pavadinimas);
 
-                    if (intent.resolveActivity(myContext.getPackageManager()) != null)
-                        myContext.startActivity(intent);
+                        if (intent.resolveActivity(myContext.getPackageManager()) != null)
+                            myContext.startActivity(intent);
+                    } catch (Exception e) {
+                        Toast.makeText(myContext, "Klaida atidarant kalendoriaus programėlę", Toast.LENGTH_LONG).show();
+                    }
                     return false;
                 }
             });
