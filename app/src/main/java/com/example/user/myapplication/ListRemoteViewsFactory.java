@@ -1,5 +1,6 @@
 package com.example.user.myapplication;
 
+import java.awt.font.TextAttribute;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
@@ -70,10 +72,16 @@ class ListRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
         if(pavadinimas.equals("")) {
             rv.setViewVisibility(R.id.pavadinimas, View.GONE);
             rv.setViewVisibility(R.id.pavadinimas2, View.VISIBLE);
-            rv.setTextViewText(R.id.pavadinimas2, "///");
+
 
             //rv.setTextViewText(R.id.mokytojas, "");
-            rv.setTextViewText(R.id.laikas, "");
+            if(mPrefs.getBoolean("rodytiLangoLaika", false)) {
+                rv.setTextViewText(R.id.laikas, pamoka.getLaikas());
+                rv.setTextViewText(R.id.pavadinimas2, "");
+            } else {
+                rv.setTextViewText(R.id.laikas, "");
+                rv.setTextViewText(R.id.pavadinimas2, "");
+            }
             rv.setTextViewText(R.id.numeris, "");
         } else {
             rv.setViewVisibility(R.id.pavadinimas2, View.GONE);

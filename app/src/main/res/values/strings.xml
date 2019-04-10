@@ -126,4 +126,5 @@
     <string name="klaida_main_link1">Klaida siunčiantis tvarkaraščio nuorodą (\"Tvarkaraštis\" 404/403)</string>
     <string name="klaida_main_link2">Klaida siunčiantis tvarkaraščio nuorodą (target 404)</string>
     <string name="atzymetas_mokinys">Atžymėtas mokinys:&#160;</string>
+    <string name="rodyti_lango_laika">Rodyti \'lango\' laiką:&#160;</string>
 </resources>

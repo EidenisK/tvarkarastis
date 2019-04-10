@@ -139,6 +139,7 @@ public class SelectSettingsActivity extends AppCompatActivity {
         setInformacijaTextProperties(informacija);
         setPanaikinimaiTextProperties();
         setNukirpimoTextProperties();
+        changeSettingColor(mPrefs.getBoolean("rodytiLangoLaika", false), R.id.showAllTimesBusena);
         changeSettingColor(mPrefs.getBoolean("autoUpdate", true), R.id.autoUpdateBusena);
         changeSettingColor(mPrefs.getBoolean("versionUpdate", true), R.id.versionUpdateBusena);
     }
@@ -358,6 +359,13 @@ public class SelectSettingsActivity extends AppCompatActivity {
     }
     /*-------------------------------------------------------------------*/
 
+
+    public void pakeistiLangoLaikoNustatymus(View view) {
+        keite_nustatymus = true;
+        boolean showAllTimes = !mPrefs.getBoolean("rodytiLangoLaika", false);
+        mPrefs.edit().putBoolean("rodytiLangoLaika", showAllTimes).apply();
+        changeSettingColor(showAllTimes, R.id.showAllTimesBusena);
+    }
 
     /*--------------------------- AutoUpdate ----------------------------*/
     public void pakeistiAutoUpdateNustatymus(View view) {

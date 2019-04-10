@@ -58,11 +58,20 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         final Pamoka pamoka = pamokosList.get(position);
-        if(pamoka.getPavadinimas().equals("")) {
+        if(pamoka.getPavadinimas().equals("")) { //JEIGU LANGAS
+            //holder.laikas.setText("");
+            if(mPrefs.getBoolean("rodytiLangoLaika", false)) {
+                holder.laikas.setText(pamoka.getLaikas());
+                holder.laikas.setGravity(Gravity.CENTER);
+                holder.pavadinimas.setText("");
+            } else {
+                holder.laikas.setText("");
+                holder.pavadinimas.setText("///");
+            }
+
             //holder.pavadinimas.setText("");
-            holder.pavadinimas.setText("///");
             //holder.info.setText("///");
-            holder.laikas.setText("");
+
             holder.numeris.setText("");
 
             //holder.info.setGravity(Gravity.CENTER);
@@ -74,6 +83,7 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
             holder.pavadinimas.setText(pamoka.getPavadinimas());
             //holder.info.setText(pamoka.getMokytojai());
             holder.laikas.setText(pamoka.getLaikas());
+            holder.laikas.setGravity(Gravity.LEFT);
             holder.numeris.setText(Integer.toString(pamoka.getNumeris()));
 
             //holder.info.setGravity(Gravity.START);
