@@ -6,8 +6,8 @@ android {
         applicationId "com.example.user.myapplication"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 15
-        versionName "v1.5"
+        versionCode 16
+        versionName "v1.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

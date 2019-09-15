@@ -30,14 +30,14 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
     SharedPreferences mPrefs;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView pavadinimas, laikas, /*info,*/ numeris;
+        public TextView pavadinimas, laikas, info, numeris;
 
         /**Randame teksto laukelius*/
         public MyViewHolder(View view, Context context) {
             super(view);
             pavadinimas = (TextView) view.findViewById(R.id.pavadinimas);
             laikas = (TextView) view.findViewById(R.id.laikas);
-            //info = (TextView) view.findViewById(R.id.mokytojas);
+            info = (TextView) view.findViewById(R.id.mokytojas);
             numeris = (TextView) view.findViewById(R.id.numeris);
         }
     }
@@ -64,30 +64,29 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
             if(mPrefs.getBoolean("rodytiLangoLaika", false)) {
                 holder.laikas.setText(pamoka.getLaikas());
                 holder.laikas.setGravity(Gravity.CENTER);
+                holder.info.setText("");
                 holder.pavadinimas.setText("");
             } else {
                 holder.laikas.setText("");
-                holder.pavadinimas.setText("///");
+                holder.pavadinimas.setText("");
+                holder.info.setText("///");
             }
-
-            //holder.pavadinimas.setText("");
-            //holder.info.setText("///");
 
             holder.numeris.setText("");
 
-            //holder.info.setGravity(Gravity.CENTER);
+            holder.info.setGravity(Gravity.CENTER);
             holder.pavadinimas.setGravity(Gravity.CENTER);
 
             holder.itemView.setOnClickListener(null);
             holder.itemView.setOnLongClickListener(null);
         } else {
             holder.pavadinimas.setText(pamoka.getPavadinimas());
-            //holder.info.setText(pamoka.getMokytojai());
+            holder.info.setText(pamoka.getMokytojai());
             holder.laikas.setText(pamoka.getLaikas());
             holder.laikas.setGravity(Gravity.LEFT);
             holder.numeris.setText(Integer.toString(pamoka.getNumeris()));
 
-            //holder.info.setGravity(Gravity.START);
+            holder.info.setGravity(Gravity.START);
             holder.pavadinimas.setGravity(Gravity.START);
 
             holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -118,12 +117,14 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
                                 .setData(CalendarContract.Events.CONTENT_URI)
                                 .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis())
                                 .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis())
-                                .putExtra(CalendarContract.Events.TITLE, pamoka.pavadinimas);
+                                .putExtra(CalendarContract.Events.TITLE, pamoka.pavadinimas)
+                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                         if (intent.resolveActivity(myContext.getPackageManager()) != null)
                             myContext.startActivity(intent);
                     } catch (Exception e) {
                         Toast.makeText(myContext, "Klaida atidarant kalendoriaus programėlę", Toast.LENGTH_LONG).show();
+                        Log.e("MyDebug",e.toString());
                     }
                     return false;
                 }

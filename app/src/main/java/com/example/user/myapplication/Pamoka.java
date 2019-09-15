@@ -20,6 +20,11 @@ public class Pamoka
     }
     void setNumeris(int n) {numeris = n;}
 
+    void addMokytojai(String mok)
+    {
+        mokytojai += mok;
+    }
+
     String getPavadinimas() {
         return pavadinimas;
     }

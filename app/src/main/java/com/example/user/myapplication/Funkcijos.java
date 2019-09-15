@@ -129,7 +129,7 @@ public class Funkcijos {
                     tempStr = cells.get(j).select("b").text();
                 }
                 if(tempStr.equals("/////") || tempStr.equals("           ")) continue;
-                //tvarkarastis.pamokos[j-1][i-2].addMokytojai(allText.replaceAll(tempStr, "").trim().replaceAll("\\u00A0", ""));
+                tvarkarastis.pamokos[j-1][i-2].addMokytojai(allText.replaceAll(tempStr, "").trim().replaceAll("\\u00A0", ""));
 
                 if(mPrefs.getBoolean("nukirpimas", false)) {
                     String [] words = tempStr.split(" ");
