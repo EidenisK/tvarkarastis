@@ -125,6 +125,9 @@ public class Funkcijos {
 
                 String allText = cells.get(j).text();
                 String tempStr = cells.get(j).select("a").text();
+                if(tempStr.equals("")) {
+                    tempStr = cells.get(j).select("b").text();
+                }
                 if(tempStr.equals("/////") || tempStr.equals("           ")) continue;
                 //tvarkarastis.pamokos[j-1][i-2].addMokytojai(allText.replaceAll(tempStr, "").trim().replaceAll("\\u00A0", ""));
 
@@ -164,6 +167,48 @@ public class Funkcijos {
     }
 
     public static void updateWidget(Context context) {
+        Log.d("myDebug", "UpdateWidget function");
+        SharedPreferences mPrefs = context.getSharedPreferences("label", 0);
+        Tvarkarastis tvr = getTvarkarastis(mPrefs);
+
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        Intent notifyIntent = new Intent(context, MyReceiver.class);
+        notifyIntent.putExtra("task", "update_widget");
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 1002, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        int pamoka; //koks pasirinktos pamokos numeris
+        Calendar pamokos_pabaiga = Calendar.getInstance(); //kada baigiasi pasirinkta pamoka (užduoties nustatymui)
+        Calendar pradzia = Calendar.getInstance(); //pamokų pradžia (patikrinti, ar nepraleidom)
+        pradzia.set(Calendar.HOUR_OF_DAY, 8);
+        pradzia.set(Calendar.MINUTE, 0);
+        pradzia.set(Calendar.SECOND, 0);
+        Calendar dabar = Calendar.getInstance();
+
+        if(dabar.before(pradzia) || dabar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY || dabar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY)
+            pamoka = -1; //pamokos dar neprasidėjo
+        else
+            for (pamoka = 0; pamoka < 9; pamoka++) {
+                pamokos_pabaiga.set(Calendar.HOUR_OF_DAY, tvr.pamokos[0][pamoka].int_laikas[1][0]);
+                pamokos_pabaiga.set(Calendar.MINUTE, tvr.pamokos[0][pamoka].int_laikas[1][1]);
+                pamokos_pabaiga.set(Calendar.SECOND, 0);
+
+                if (pamokos_pabaiga.after(dabar)) { pamoka++; break; } //radom pamoką
+                if(pamoka == 8) { pamoka = -1; break; } //pamokos jau pasibaigė
+            }
+
+        //Log.d("myDebug", "parinkta pamoka " + pamoka);
+        mPrefs.edit().putInt("dabartine_pamoka", pamoka).apply();
+
+        if(pamoka == -1) { //jei neradom pamokos - kitam rytui
+            if(pradzia.before(dabar)) pradzia.add(Calendar.DAY_OF_MONTH, 1);
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, pradzia.getTimeInMillis(), pendingIntent);
+            //Log.d("myDebug", "nustatyta užduotis kitai dienai, 8:00");
+        } else { //jei radom pamoką - jos pabaigai
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, pamokos_pabaiga.getTimeInMillis(), pendingIntent);
+            //Log.d("myDebug", pamokos_pabaiga.toString());
+            //Log.d("myDebug", "nustatyta užduotis" + pamokos_pabaiga.get(Calendar.HOUR_OF_DAY) + ":" + pamokos_pabaiga.get(Calendar.MINUTE));
+        }
+
         Intent intent = new Intent(context, MyWidgetProvider.class);
         intent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
         int[] ids = AppWidgetManager.getInstance(context).getAppWidgetIds(new ComponentName(context.getApplicationContext(), MyWidgetProvider.class));

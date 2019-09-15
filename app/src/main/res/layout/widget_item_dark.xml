@@ -9,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/row_padding_vertical"
-    android:background="#50333333">
+    android:background="#50333333"
+    android:id="@+id/item_main_layout">
 
     <TextView
         android:id="@+id/pavadinimas"

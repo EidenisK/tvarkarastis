@@ -8,6 +8,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
+import android.util.Log;
 import android.widget.Toast;
 
 public class MyNewIntentService extends IntentService{
@@ -38,6 +39,10 @@ public class MyNewIntentService extends IntentService{
                 break;
             case "download":
                 downloadString();
+                break;
+            case "update_widget":
+                //Log.d("myDebug", "Update_widget in mynewintentservice");
+                Funkcijos.updateWidget(getApplicationContext());
                 break;
             default:
                 Toast.makeText(getApplicationContext(), R.string.nepavyko_gauti_uzduoties, Toast.LENGTH_LONG).show();

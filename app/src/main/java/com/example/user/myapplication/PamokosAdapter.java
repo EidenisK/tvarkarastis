@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
@@ -93,6 +94,7 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
                 @Override
                 public void onClick(View v) {
                     Intent tinklalapioIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(pamoka.nuoroda()));
+                    tinklalapioIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     myContext.startActivity(tinklalapioIntent);
                 }
             });
@@ -131,21 +133,31 @@ public class PamokosAdapter extends RecyclerView.Adapter<PamokosAdapter.MyViewHo
     }
 
     private int selectBackgroundColor(int position) {
+
         Tvarkarastis tvarkarastis = Funkcijos.getTvarkarastis(mPrefs);
         int pasirinktaDiena = mPrefs.getInt("pasirinktaDiena", -1);
 
         Calendar checkCal1 = Calendar.getInstance(); //Dabartinės pamokos pabaiga
-        checkCal1.set(Calendar.HOUR_OF_DAY, tvarkarastis.intLaikas[position *2 +1][0]);
-        checkCal1.set(Calendar.MINUTE, tvarkarastis.intLaikas[position *2 +1][1]);
+        checkCal1.set(Calendar.HOUR_OF_DAY, tvarkarastis.pamokos[0][position].int_laikas[1][0]);
+        checkCal1.set(Calendar.MINUTE, tvarkarastis.pamokos[0][position].int_laikas[1][1]);
+
+        /*checkCal1.set(Calendar.HOUR_OF_DAY, tvarkarastis.intLaikas[position *2 +1][0]);
+        checkCal1.set(Calendar.MINUTE, tvarkarastis.intLaikas[position *2 +1][1]);*/
         checkCal1.set(Calendar.SECOND, 0);
 
         Calendar checkCal2 = Calendar.getInstance();
         if(position == 0) { //Pirmos pamokos pradžia
-            checkCal2.set(Calendar.HOUR_OF_DAY, tvarkarastis.intLaikas[position *2][0]);
-            checkCal2.set(Calendar.MINUTE, tvarkarastis.intLaikas[position *2][1]);
+            checkCal2.set(Calendar.HOUR_OF_DAY, tvarkarastis.pamokos[0][0].int_laikas[0][0]);
+            checkCal2.set(Calendar.MINUTE, tvarkarastis.pamokos[0][0].int_laikas[0][1]);
+
+            /*checkCal2.set(Calendar.HOUR_OF_DAY, tvarkarastis.intLaikas[position *2][0]);
+            checkCal2.set(Calendar.MINUTE, tvarkarastis.intLaikas[position *2][1]);*/
         } else { //Buvusios pamokos pabaiga
-            checkCal2.set(Calendar.HOUR_OF_DAY, tvarkarastis.intLaikas[position *2 -1][0]);
-            checkCal2.set(Calendar.MINUTE, tvarkarastis.intLaikas[position *2 -1][1]);
+            checkCal2.set(Calendar.HOUR_OF_DAY, tvarkarastis.pamokos[0][position -1].int_laikas[1][0]);
+            checkCal2.set(Calendar.MINUTE, tvarkarastis.pamokos[0][position -1].int_laikas[1][1]);
+
+            /*checkCal2.set(Calendar.HOUR_OF_DAY, tvarkarastis.intLaikas[position *2 -1][0]);
+            checkCal2.set(Calendar.MINUTE, tvarkarastis.intLaikas[position *2 -1][1]);*/
         }
         checkCal2.set(Calendar.SECOND, 0);
 

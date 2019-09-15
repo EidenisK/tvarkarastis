@@ -127,4 +127,5 @@
     <string name="klaida_main_link2">Klaida siunčiantis tvarkaraščio nuorodą (target 404)</string>
     <string name="atzymetas_mokinys">Atžymėtas mokinys:&#160;</string>
     <string name="rodyti_lango_laika">Rodyti \'lango\' laiką:&#160;</string>
+    <string name="colorInWidget">Pažymėti  pamoką widget\'e:&#160;</string>
 </resources>

@@ -3,16 +3,22 @@ package com.example.user.myapplication;
 import java.awt.font.TextAttribute;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Random;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.provider.CalendarContract;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
+import android.widget.Toast;
 
 class ListRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
     private List<Pamoka> pamokos = new ArrayList<>();
@@ -73,7 +79,6 @@ class ListRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
             rv.setViewVisibility(R.id.pavadinimas, View.GONE);
             rv.setViewVisibility(R.id.pavadinimas2, View.VISIBLE);
 
-
             //rv.setTextViewText(R.id.mokytojas, "");
             if(mPrefs.getBoolean("rodytiLangoLaika", false)) {
                 rv.setTextViewText(R.id.laikas, pamoka.getLaikas());
@@ -84,6 +89,15 @@ class ListRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
             }
             rv.setTextViewText(R.id.numeris, "");
         } else {
+            //Log.d("myDebug", "dabartine pamoka in listremoteviewsfactory: " + Integer.toString(mPrefs.getInt("dabartine_pamoka", -1)));
+            if(pamoka.getNumeris() == mPrefs.getInt("dabartine_pamoka", -1) && mPrefs.getBoolean("colorInWidget", true)) {
+                int darkModeColor = Color.argb(191, 123, 123, 123);
+                int lightModeColor = Color.argb(191, 199, 199, 199);
+                rv.setInt(R.id.item_main_layout, "setBackgroundColor", (colorMode == 0 ? lightModeColor : darkModeColor));
+            } else {
+                rv.setInt(R.id.item_main_layout, "setBackgroundColor", Color.argb(0,0,0,0));
+            }
+
             rv.setViewVisibility(R.id.pavadinimas2, View.GONE);
             rv.setViewVisibility(R.id.pavadinimas, View.VISIBLE);
             rv.setTextViewText(R.id.pavadinimas, pavadinimas);

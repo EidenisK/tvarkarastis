@@ -17,6 +17,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
@@ -140,6 +141,7 @@ public class SelectSettingsActivity extends AppCompatActivity {
         setPanaikinimaiTextProperties();
         setNukirpimoTextProperties();
         changeSettingColor(mPrefs.getBoolean("rodytiLangoLaika", false), R.id.showAllTimesBusena);
+        changeSettingColor(mPrefs.getBoolean("colorInWidget", true), R.id.colorInWidgetBusena);
         changeSettingColor(mPrefs.getBoolean("autoUpdate", true), R.id.autoUpdateBusena);
         changeSettingColor(mPrefs.getBoolean("versionUpdate", true), R.id.versionUpdateBusena);
     }
@@ -367,6 +369,13 @@ public class SelectSettingsActivity extends AppCompatActivity {
         changeSettingColor(showAllTimes, R.id.showAllTimesBusena);
     }
 
+    public void pakeistiColorInWidget(View view) {
+        keite_nustatymus = true;
+        boolean colorInWidget = !mPrefs.getBoolean("colorInWidget", true);
+        mPrefs.edit().putBoolean("colorInWidget", colorInWidget).apply();
+        changeSettingColor(colorInWidget, R.id.colorInWidgetBusena);
+    }
+
     /*--------------------------- AutoUpdate ----------------------------*/
     public void pakeistiAutoUpdateNustatymus(View view) {
         keite_nustatymus = true;
@@ -584,7 +593,10 @@ public class SelectSettingsActivity extends AppCompatActivity {
         issaugotiMokinius(mokiniai);
     }
 
-
+    public void atnaujintiWidget(View view) {
+        Log.d("myDebug", "AAAAAAAAAAAAAAA");
+        Funkcijos.updateWidget(getApplicationContext());
+    }
 
     private void issaugotiMokinius(List <Mokinys> mokiniai) {
         Funkcijos.setList(mPrefs, "mokiniuSarasas", mokiniai);
