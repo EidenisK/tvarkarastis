@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
@@ -25,6 +26,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.user.myapplication.BuildConfig;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,6 +77,8 @@ public class SelectSettingsActivity extends AppCompatActivity {
             apie_button.setImageDrawable(getDrawable(R.drawable.apie_white));
         }
 
+        TextView versionView = findViewById(R.id.versionView);
+        versionView.setText(BuildConfig.VERSION_NAME);
         rodytiIssaugotaSarasa();
     }
 

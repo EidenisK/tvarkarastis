@@ -348,6 +348,7 @@ public class Funkcijos {
                                 case "nameString": intent = new Intent("name_download_finished"); break;
                                 case "pamokos": intent = new Intent("lesson_download_finished"); break;
                                 case "web-version": intent = new Intent("version_check_finished"); break;
+                                case "web-info": intent = new Intent("info_check_finished"); break;
                                 case "main_link": updateMainLink(context, mPrefs, res); break;
                             }
                             if(intent != null)
@@ -377,7 +378,20 @@ public class Funkcijos {
     /*----------------------------------------------------------------------------------------*/
 
     static private void updateMainLink(Context context, SharedPreferences mPrefs, String res) {
-        int idx = res.indexOf(">Tvarkaraštis<") -1;
+
+        Document doc = Jsoup.parse(res);
+        try {
+            String link = doc.select("a[id=\"main-link\"]").get(0).text();
+
+            mPrefs.edit().putString("main_link", link).apply();
+            Intent intent = new Intent("link_download_finished");
+            LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
+        }
+        catch (Exception e) {
+            Toast.makeText(context, "Kritinė klaida ieškant tvarkaraščio nuorodos. Susisiekite su programos kūrėju", Toast.LENGTH_LONG).show();
+        }
+
+        /*int idx = res.indexOf(">Tvarkaraštis<") -1;
         if(idx != -1) {
             while(!res.substring(idx, idx +4).equals("href"))
                 idx--;
@@ -385,7 +399,7 @@ public class Funkcijos {
             mPrefs.edit().putString("main_link", link).apply();
             Intent intent = new Intent("link_download_finished");
             LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
-        } else Toast.makeText(context, R.string.klaida_main_link1, Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(context, R.string.klaida_main_link1, Toast.LENGTH_SHORT).show();*/
     }
 
 

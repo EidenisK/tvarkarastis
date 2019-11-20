@@ -26,6 +26,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.jsoup.Jsoup;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -85,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             Funkcijos.nustatytiPamokuAtnaujinima(getApplicationContext(), mPrefs);
 
         mPrefs.edit().putBoolean("mainActivityDarkTheme", mPrefs.getBoolean("darkTheme", false)).apply();
+        checkForMessages();
         checkForUpdates();
 
         BroadcastReceiver message = new BroadcastReceiver() {
@@ -145,7 +148,52 @@ public class MainActivity extends AppCompatActivity {
         LocalBroadcastManager.getInstance(getApplicationContext()).registerReceiver(message, new IntentFilter("version_check_finished"));
     }
 
+    void displayInfoDialog(String info) {
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.custom_one_button_dialog);
 
+        final TextView dialog_text = dialog.findViewById(R.id.dialog_text),
+                button = dialog.findViewById(R.id.dialog_button);
+
+        dialog_text.setText(info);
+
+        dialog_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent tinklalapioIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://bit.ly/gvgtvarkarastis"));
+                startActivity(tinklalapioIntent);
+            }
+        });
+
+        button.setText(R.string.gerai);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
+
+    void checkForMessages() {
+        Funkcijos.getString(getApplicationContext(), "https://eidenisk.github.io/tvarkarastis/info.html", mPrefs, "web-info");
+        BroadcastReceiver message = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                try {
+                    String info_whole = mPrefs.getString("web-info", "NULL");
+                    String info = Jsoup.parse(info_whole).select("a[id=\"info\"]").get(0).text();
+                    displayInfoDialog(info);
+                } catch (Exception e) {
+                    Log.d("myDebug", "problem with web information, wait and reload or contact the developer");
+                }
+
+            }
+        };
+        LocalBroadcastManager.getInstance(getApplicationContext()).registerReceiver(message, new IntentFilter("info_check_finished"));
+    }
 
     /*--------------- Paruošti dienų ir pamokų sąrašus pirmą kartą atidarius programą -------------------*/
     /**Klasė, sukurianti pagrindinio ekrano sąrašus ir tik tada juos atnaujinanti*/

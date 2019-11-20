@@ -123,6 +123,15 @@
                     android:textColor="?grayText" />
 
                 <TextView
+                    android:id="@+id/versionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:textColor="?grayText"
+                    android:textAlignment="center"/>
+
+                <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
