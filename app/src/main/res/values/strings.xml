@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Tvarkaraštis</string>
-    <string name="main_link">http://www.vaivorykstesgimnazija.lt</string>
+    <string name="main_link">https://eidenisk.github.io/tvarkarastis/info.html</string>
 
     <!-- MAIN MENU -->
     <string name="load_timetable">ATNAUJINTI PAMOKAS</string>

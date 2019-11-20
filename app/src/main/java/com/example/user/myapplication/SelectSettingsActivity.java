@@ -28,6 +28,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.example.user.myapplication.BuildConfig;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
@@ -570,24 +574,25 @@ public class SelectSettingsActivity extends AppCompatActivity {
     /**funkcija vardu saraso HTML tekstui suskirstyti i kintamuosius*/
     public void analyzeNames(String result) {
         inputName.setHint(R.string.iveskite_varda);
-        String [] resultArr = result.split("\n", 0); //skaidome sakini visur, kur prasideda nauja eilute
-        boolean moksleiviai = false; //ar siuo metu skaitomas sakinys priklauso "Moksleiviai" lenteles skilciai
         mokiniai.clear(); //panaikiname standartinius elementus sarase
         rodomiMokiniai.clear();
 
-        for(String a : resultArr) {
-            String nameInString = "", linkInString = "";
-            if(moksleiviai && a.contains("<a h")) {
-                nameInString = Funkcijos.findNameInString(a, false); //pazymime, kad sakinyje nurodoma mokinio name bei pavarde
-                linkInString = Funkcijos.findLinkInString(getApplicationContext(), a);
-            } else if(a.contains("Klasės"))
-                moksleiviai = true;
+        try {
+            Element table = Jsoup.parse(result).select("table").get(1);
+            Elements links = table.select("a");
 
-            if(!nameInString.equals("")) {
-                Mokinys mok = new Mokinys(nameInString, linkInString);
-                mokiniai.add(mok); //pridedame nuskaitytus mokinio duomenis i sarasa
-                rodomiMokiniai.add(mok);
+            for (Element a : links) {
+                String nameInString = a.text();
+                String linkInString = getSharedPreferences("label", 0).getString("main_link", "NULL") + a.attr("href");
+
+                if (!nameInString.equals("")) {
+                    Mokinys mok = new Mokinys(nameInString, linkInString);
+                    mokiniai.add(mok); //pridedame nuskaitytus mokinio duomenis i sarasa
+                    rodomiMokiniai.add(mok);
+                }
             }
+        } catch (Exception e) {
+            Log.d("myDebug", e.toString());
         }
 
         if(mokiniai.size() > 0) {
@@ -600,7 +605,6 @@ public class SelectSettingsActivity extends AppCompatActivity {
     }
 
     public void atnaujintiWidget(View view) {
-        Log.d("myDebug", "AAAAAAAAAAAAAAA");
         Funkcijos.updateWidget(getApplicationContext());
     }
 

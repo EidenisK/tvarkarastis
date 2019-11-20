@@ -94,6 +94,7 @@ public class Funkcijos {
     /*----------------------------- Pamokų analizavimo funkcijos --------------------------------------*/
     /**Funkcija pamoku saraso HTML tekstui skaidyti i kintamuosius*/
     public static void analyzeString(String result, Tvarkarastis tvarkarastis, SharedPreferences mPrefs, Context context) {
+
         tvarkarastis.clear();
         Document doc = Jsoup.parse(result);
         try {
@@ -105,7 +106,7 @@ public class Funkcijos {
 
             tvarkarastis.pavadinimas = tvarkarastis.pavadinimas.substring(0, end_of_1) + "\n" + tvarkarastis.pavadinimas.substring(start_of_2);
         } catch(Exception e) {
-            Log.d("myDebug", "ERROR");
+            Log.d("myDebug", "analyzeString ERROR");
         }
 
         Element table = doc.select("table").get(0);
@@ -167,7 +168,7 @@ public class Funkcijos {
     }
 
     public static void updateWidget(Context context) {
-        Log.d("myDebug", "UpdateWidget function");
+        //Log.d("myDebug", "UpdateWidget function");
         SharedPreferences mPrefs = context.getSharedPreferences("label", 0);
         Tvarkarastis tvr = getTvarkarastis(mPrefs);
 
@@ -221,48 +222,6 @@ public class Funkcijos {
         intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids);
         context.sendBroadcast(intent);
     }
-
-    public static String findNameInString(String a, boolean autoComplete) {
-        int tagStart = a.indexOf('<'),
-                tagEnd = a.indexOf('>');
-
-        while(tagStart - tagEnd < 3) {
-            if(tagStart < tagEnd)
-                a = a.replaceFirst("<", "");
-            else
-                a = a.replaceFirst(">", "");
-            tagStart = a.indexOf('<');
-            tagEnd = a.indexOf('>');
-
-            if(tagStart == -1 || tagEnd == -1)
-                break;
-        }
-        if(tagStart != -1 && tagEnd != -1)
-            return a.substring(tagEnd+1, tagStart);
-        else return "";
-    }
-
-    public static String findLinkInString(Context context, String a) {
-        int propertyStart = -1, propertyEnd = -1;
-
-        while(a.indexOf('"') != -1) {
-            propertyStart = a.indexOf('"');
-            a = a.replaceFirst("\"", "");
-            propertyEnd = a.indexOf('"');
-            a = a.replaceFirst("\"", "");
-        }
-
-        if(propertyStart != -1 && propertyEnd != -1) {
-            String link = context.getSharedPreferences("label", 0).getString("main_link", "NULL");
-            if(!link.equals("NULL")) {
-                if (link.charAt(link.length() - 1) != '/')
-                    link += "/";
-                return link + a.substring(propertyStart, propertyEnd);
-            }
-            else return "";
-        }
-        else return "";
-    }
     /*-------------------------------------------------------------------------------------------------------*/
 
 
@@ -296,7 +255,7 @@ public class Funkcijos {
         int suma = 0;
         for(int pamID = 0; pamID < tvarkarastis.maxPamoku; pamID++) {
             String temp = tvarkarastis.laikas[pamID];
-            Log.d("myDebug", temp);
+            //Log.d("myDebug", temp);
             String[] laikas = new String[]{temp.substring(0, 2), temp.substring(3, 5), temp.substring(6, 8), temp.substring(9)};
             for (int i = 0; i < 2; i++)
                 for (int j = 0; j < 2; j++) {
@@ -354,6 +313,7 @@ public class Funkcijos {
                             if(intent != null)
                                 LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
                         } catch (Exception ex) {
+                            Log.d("myDebug", link);
                             Toast.makeText(context, R.string.nepavyko_atsisiusti, Toast.LENGTH_LONG).show();
                         }
                     }
@@ -365,11 +325,11 @@ public class Funkcijos {
         BroadcastReceiver message = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
-                if(target.equals("pamokos"))
+                if(target.equals("pamokos")) {
                     getString(context, mPrefs.getString("link", "NULL"), mPrefs, target);
-                else if(target.equals("nameString"))
+                } else if(target.equals("nameString")) {
                     getString(context, mPrefs.getString("main_link", "NULL"), mPrefs, target);
-                else
+                } else
                     Toast.makeText(context, R.string.klaida_main_link2, Toast.LENGTH_SHORT).show();
             }
         };
@@ -390,16 +350,6 @@ public class Funkcijos {
         catch (Exception e) {
             Toast.makeText(context, "Kritinė klaida ieškant tvarkaraščio nuorodos. Susisiekite su programos kūrėju", Toast.LENGTH_LONG).show();
         }
-
-        /*int idx = res.indexOf(">Tvarkaraštis<") -1;
-        if(idx != -1) {
-            while(!res.substring(idx, idx +4).equals("href"))
-                idx--;
-            String link = res.substring(idx+6, res.indexOf('"', idx+6));
-            mPrefs.edit().putString("main_link", link).apply();
-            Intent intent = new Intent("link_download_finished");
-            LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
-        } else Toast.makeText(context, R.string.klaida_main_link1, Toast.LENGTH_SHORT).show();*/
     }
 
 
