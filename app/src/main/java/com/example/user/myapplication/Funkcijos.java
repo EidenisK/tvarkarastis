@@ -339,7 +339,7 @@ public class Funkcijos {
                     public void onCompleted(Exception e, byte[] result) {
                         try {
                             String res;
-                            if(target.equals("main_link"))
+                            if(target.equals("main_link") || target.equals("web-info"))
                                 res = new String(result, "UTF-8");
                             else res = new String(result, "Windows-1257");
                             mPrefs.edit().putString(target, res).apply();
