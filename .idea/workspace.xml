@@ -16,12 +16,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="v1.6, pataisyti critical bugs, pridėta mokytojų ir kabinetų informacija">
+    <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="pradedama v1.7 (mokyklos puslapyje nebėra tvarkaraščio) - funkcinė versija baigta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/info.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="1955">
               <caret line="115" column="37" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="37" />
             </state>
           </provider>
@@ -64,27 +60,19 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_select_settings.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="2159">
               <caret line="127" column="54" selection-start-line="127" selection-start-column="54" selection-end-line="127" selection-end-column="54" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="2125">
               <caret line="154" column="24" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="24" />
-              <folding>
-                <element signature="e#15300#16688#0" expanded="true" />
-                <element signature="e#16566#16594#0" expanded="true" />
-                <element signature="e#16687#16688#0" expanded="true" />
-                <element signature="e#16961#16998#0" expanded="true" />
-                <element signature="e#17166#17779#0" expanded="true" />
-                <element signature="e#17778#17779#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -92,18 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="1819">
               <caret line="141" column="26" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="26" />
-              <folding>
-                <element signature="e#3190#3363#0" expanded="true" />
-                <element signature="e#3362#3363#0" expanded="true" />
-                <element signature="e#3868#3901#0" expanded="true" />
-                <element signature="e#4728#5380#0" expanded="true" />
-                <element signature="e#5379#5380#0" expanded="true" />
-                <element signature="e#6326#6340#0" expanded="true" />
-                <element signature="e#6757#7326#0" expanded="true" />
-                <element signature="e#7325#7326#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -120,14 +98,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
-              <caret line="586" selection-start-line="586" selection-end-line="586" />
+            <state relative-caret-position="357">
+              <caret line="607" column="9" selection-start-line="607" selection-start-column="9" selection-end-line="607" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10098#10136#0" expanded="true" />
-                <element signature="e#23431#23454#0" expanded="true" />
-                <element signature="e#25740#25741#0" expanded="true" />
-                <element signature="e#25803#25804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+            <state relative-caret-position="1683">
               <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
             </state>
           </provider>
@@ -153,12 +127,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pamokos_list_row.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
             <state relative-caret-position="578">
               <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -226,7 +200,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1376" />
+    <option name="width" value="696" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -236,22 +210,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="tvarkarastis" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="AnalyzeApkAction.lastApkPath" value="$USER_HOME$/Downloads/KETbilietai.lt B kategorija_com.theory.carlt.apk" />
@@ -419,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568565291593</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pradedama v1.7 (mokyklos puslapyje nebėra tvarkaraščio) - funkcinė versija baigta">
+      <created>1574282416938</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574282416938</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -450,10 +416,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" x="22" y="269" width="1316" height="190" id="Logcat" order="6" sideWeight="0.49924013" visible="true" weight="0.3535188" />
+      <window_info anchor="bottom" x="22" y="269" width="1316" height="190" id="Logcat" order="6" sideWeight="0.49924013" weight="0.3535188" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49924013" weight="0.20949264" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007599" side_tool="true" weight="0.33224222" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3289689" />
@@ -476,7 +442,8 @@
     <MESSAGE value="Paspaudus ir palaikius ant pamokos sukuriamas įvykis kalendoriaus programėlėje" />
     <MESSAGE value="galima pasirinkti, kad rodytų laiką 'langui'" />
     <MESSAGE value="v1.6, pataisyti critical bugs, pridėta mokytojų ir kabinetų informacija" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.6, pataisyti critical bugs, pridėta mokytojų ir kabinetų informacija" />
+    <MESSAGE value="pradedama v1.7 (mokyklos puslapyje nebėra tvarkaraščio) - funkcinė versija baigta" />
+    <option name="LAST_COMMIT_MESSAGE" value="pradedama v1.7 (mokyklos puslapyje nebėra tvarkaraščio) - funkcinė versija baigta" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/KETbilietai.lt B kategorija_com.theory.carlt.apk" />
@@ -488,8 +455,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_layout_light.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/RestartAlarmsReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -501,12 +468,12 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_item.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Tvarkarastis.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -553,12 +520,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MyWidgetProvider.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -582,12 +549,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/widget_item_dark.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MokiniaiAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -614,25 +581,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Pamoka.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Mokinys.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pamokos_list_row.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="37" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="37" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_select_settings.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
+        <state relative-caret-position="2159">
+          <caret line="127" column="54" selection-start-line="127" selection-start-column="54" selection-end-line="127" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="154" column="24" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="141" column="26" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -643,70 +624,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="115" column="37" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="37" />
+        <state relative-caret-position="1683">
+          <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Mokinys.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Pamoka.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="578">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_select_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="127" column="54" selection-start-line="127" selection-start-column="54" selection-end-line="127" selection-end-column="54" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/Funkcijos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="154" column="24" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="24" />
-          <folding>
-            <element signature="e#15300#16688#0" expanded="true" />
-            <element signature="e#16566#16594#0" expanded="true" />
-            <element signature="e#16687#16688#0" expanded="true" />
-            <element signature="e#16961#16998#0" expanded="true" />
-            <element signature="e#17166#17779#0" expanded="true" />
-            <element signature="e#17778#17779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="141" column="26" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="26" />
-          <folding>
-            <element signature="e#3190#3363#0" expanded="true" />
-            <element signature="e#3362#3363#0" expanded="true" />
-            <element signature="e#3868#3901#0" expanded="true" />
-            <element signature="e#4728#5380#0" expanded="true" />
-            <element signature="e#5379#5380#0" expanded="true" />
-            <element signature="e#6326#6340#0" expanded="true" />
-            <element signature="e#6757#7326#0" expanded="true" />
-            <element signature="e#7325#7326#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pamokos_list_row.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="586" selection-start-line="586" selection-end-line="586" />
+        <state relative-caret-position="357">
+          <caret line="607" column="9" selection-start-line="607" selection-start-column="9" selection-end-line="607" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10098#10136#0" expanded="true" />
-            <element signature="e#23431#23454#0" expanded="true" />
-            <element signature="e#25740#25741#0" expanded="true" />
-            <element signature="e#25803#25804#0" expanded="true" />
           </folding>
         </state>
       </provider>
