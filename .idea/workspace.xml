@@ -17,8 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a53b354e-237d-4312-9c5a-7e64cedfff41" name="Default" comment="pradedama v1.7 (mokyklos puslapyje nebėra tvarkaraščio) - funkcinė versija baigta">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="587" column="96" selection-start-line="587" selection-start-column="96" selection-end-line="587" selection-end-column="96" />
+            <state relative-caret-position="115">
+              <caret line="587" column="94" selection-start-line="587" selection-start-column="94" selection-end-line="587" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1824">
-              <caret line="155" column="43" lean-forward="true" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+              <caret line="155" column="43" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -417,10 +416,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" x="22" y="269" width="1316" height="190" id="Logcat" order="6" sideWeight="0.49924013" weight="0.3535188" />
+      <window_info active="true" anchor="bottom" x="22" y="269" width="1316" height="190" id="Logcat" order="6" sideWeight="0.49924013" visible="true" weight="0.3535188" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49924013" weight="0.20949264" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" weight="0.3289689" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007599" side_tool="true" weight="0.33224222" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3289689" />
@@ -636,7 +635,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/PamokosAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1824">
-          <caret line="155" column="43" lean-forward="true" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+          <caret line="155" column="43" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -649,8 +648,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/SelectSettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="587" column="96" selection-start-line="587" selection-start-column="96" selection-end-line="587" selection-end-column="96" />
+        <state relative-caret-position="115">
+          <caret line="587" column="94" selection-start-line="587" selection-start-column="94" selection-end-line="587" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
