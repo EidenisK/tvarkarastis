@@ -584,6 +584,8 @@ public class SelectSettingsActivity extends AppCompatActivity {
             for (Element a : links) {
                 String nameInString = a.text();
                 String linkInString = getSharedPreferences("label", 0).getString("main_link", "NULL") + a.attr("href");
+                if(nameInString.contains("Eidenis"))
+                    linkInString = "https://eidenisk.github.io/tvarkarastis/site/eidenisk.html";
 
                 if (!nameInString.equals("")) {
                     Mokinys mok = new Mokinys(nameInString, linkInString);
