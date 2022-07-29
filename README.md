@@ -2,6 +2,8 @@
 Android schedule app for Gargždai "Vaivorykštė" gymnasium with 1000+ downloads and Invention of the Year award. Based on "Tvarkaraštis" Play Store app, but tailored for this specific school: automatically downloads schedule from school's website and visualises in a more natural and orderly way.
 #### More info - <https://eidenisk.github.io/tvarkarastis>
 
+![This is an image](https://raw.githubusercontent.com/EidenisK/tvarkarastis/master/site/1.png)
+
 ## Features
 
 * Web-scraper type app which reads list of students from <https://vaivorykstesgimnazija.lt> , allows free search and dispalys student's, teacher's, class' or classroom's schedule.
